@@ -1,0 +1,15 @@
+var Footer = Footer || {};
+
+Footer.controller = function(){
+    m.redraw.strategy("diff");
+};
+
+Footer.view = function(ctrl){
+    return (
+        <div id="footer">
+            FOOTER
+        </div>
+    )
+}
+
+module.exports = Footer;

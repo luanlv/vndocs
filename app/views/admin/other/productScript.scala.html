@@ -1,0 +1,141 @@
+<script>
+$(function() {
+  CKEDITOR.replace('editor1');
+});
+
+
+$(document).ready(function () {
+	var x = $('.view').length;
+
+  $('#slide').popup({
+      focusdelay: 400,
+      outline: true,
+      vertical: 'top'
+  });
+
+	$(".slide_open").click(function(){
+	 $.ajax({
+			type: "GET", // or GET
+			url: "/image/list",
+			success: function(data){
+			 $(".list-images").html(data)
+			}
+    });
+  });
+
+  $(document).on('click', '.img-container', function(){
+    if(x<5){
+    var smallUrl = $(this).find('img:first').attr('src');
+			$('.images-view > div').append(
+				'<img class="view" src="' + smallUrl + '" alt=""/>'
+			);
+			x +=1;
+		}
+	});
+
+	$(document).on('click', '.images-view > div > img', function(){
+		$(this).remove();
+		x-=1;
+	});
+
+	$(document).on('click', '.slide_open', function(){
+		var images = $('.image-wrap > div');
+		$('.images-view').empty().append(images);
+	});
+
+	$(document).on('click', '.imageOk', function(){
+		var images = $('.images-view > div');
+		$('.image-wrap').append(images);
+		var z = 0;
+		$('.listImage').empty();
+		$('.image-wrap > div').children('img').each(function () {
+      var smallUrl = $(this).attr('src');
+      var listImage = $('.listImage');
+			listImage.append('<input type="hidden" name="info.image['+ z +'].origin" class="" value="'+ smallUrl.replace('/small/', '/origin/') +'">');
+			listImage.append('<input type="hidden" name="info.image['+ z +'].small" class="" value="'+ smallUrl +'">');
+			listImage.append('<input type="hidden" name="info.image['+ z +'].thumb" class="" value="'+ smallUrl.replace('/small/', '/thumb/') +'">');
+			z+=1;
+		});
+	});
+
+  $(document).on('keypress', '.search-image', function (event) {
+         if(event.which === 13){
+            $.ajax({
+							type: "GET", // or GET
+							url: "/image/list" + "?name=" + $(this).val(),
+							success: function(data){
+								 $(".list-images").html(data)
+							}
+						});
+         }
+  });
+
+	$(document).on('click', '.back', function (event) {
+        $.ajax({
+					type: "GET", // or GET
+					url: "/image/list" + "?name=" + $(".search-image").val() + "&page=" + (parseInt($('.page').text())-1).toString(),
+					success: function(data){
+						 $(".list-images").html(data)
+					}
+				});
+  });
+
+  $(document).on('click', '.next', function (event) {
+        $.ajax({
+					type: "GET", // or GET
+					url: "/image/list" + "?name=" + $(".search-image").val() + "&page=" + (parseInt($('.page').text())+1).toString(),
+					success: function(data){
+						 $(".list-images").html(data)
+					}
+				});
+  });
+
+
+  $(document).on('change', '#sku_id', function(even){
+      var cate = $('#sku_id').find(":selected").val();
+      $.ajax({
+					type: "GET", // or GET
+					url: "/api/getGroup/" + cate,
+					success: function(data){
+						var group = $('#infogroup');
+					  $('#infogroup option').remove();
+					  data.forEach(function(item){
+					    group.append("<option value='" + item + "'>" + item + "</option>");
+					  });
+					}
+				});
+  });
+
+
+  var templatePrice = function(num){
+    var str = '<div id="p' + num + '">';
+    str += '<div class="col-md-6">';
+    str += '<input class="form-control" type="text" name="core.price['+ num +'].num"  value="" placeholder="Số lượng">';
+    str += '</div>';
+    str += '<div class="col-md-6">';
+    str += '<input class="form-control" type="text" name="core.price[' + num + '].price"  value="" placeholder="Giá">';
+    str += '</div>';
+    str += '</div>';
+    return str;
+  };
+
+
+  var priceCurrent = $(".priceCount").length;
+  $(document).on('click', '#morePrice', function(){
+    if(priceCurrent < 5){
+	    $('#priceContainer').append(templatePrice(priceCurrent));
+	    priceCurrent += 1;
+    }
+  });
+
+ $(document).on('click', '#lessPrice', function(){
+    if(priceCurrent > 0){
+	    var id = "#p" + priceCurrent;
+	    console.log(id);
+	    priceCurrent -= 1;
+	    $(id).remove();
+    }
+  });
+
+});
+</script>

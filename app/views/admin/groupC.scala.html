@@ -1,0 +1,33 @@
+@(form: Form[_], listCate: List[lila.product.Category])(implicit ctx: Context)
+@import admin.field._
+
+@moreCss = {
+
+}
+
+@moreJs = {
+}
+
+@admin.layout("Admin | Create Product", moreCss, moreJs){
+
+		<div class="row">
+			<form action="@routes.Admin.createGroupPost()" method="POST">
+				<div class="col-md-6">
+
+					<div class="form-group">
+						<label for="name">Chọn category</label>
+						<select name="name" id="name" class="form-control">
+							<option value="">Select</option>
+							@for(item <- listCate){
+								<option value="@item.id">@item.name</option>
+							}
+						</select>
+					</div>
+
+					@formText("Thêm group", form("value"))
+					<button type="submit" class="btn btn-primary">Thêm group</button>
+
+				</div>
+			</form>
+		</div>
+}

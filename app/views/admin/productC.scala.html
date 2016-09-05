@@ -1,0 +1,177 @@
+@(form: Form[_], listCate: List[lila.product.Category],
+	listBrand: List[String], listOrigin: List[String],
+	listLegType: List[String], listLegNumber: List[String])(implicit ctx: Context)
+@import admin.field._
+
+@moreCss = {
+	@cssTag("admin/custom.css")
+}
+
+@moreJs = {
+	@jsTag("admin/plugins/ckeditor/ckeditor.js")
+	@jsTag("popup_overlay/jquery.popupoverlay.js")
+
+	@admin.other.productScript()
+}
+
+@admin.layout("Admin | Create Product", moreCss, moreJs){
+<form action="@routes.Admin.createProduct()" method="POST">
+
+	<div class="row">
+		<div class="col-md-12">
+			<button class="initialism slide_open btn btn-success" data-popup-ordinal="0" id="open_7487521">Chọn ảnh</button>
+			<button type="submit" class="btn btn-primary">Submit</button>
+
+			<div class="image-wrap" style="min-width: 180px; height: 150px; border: solid 1px #ddd; margin-top: 5px; margin-bottom: 5px;">
+				<div>
+				@for(i <- 0 to 4){
+					@if(form("info.image["+i+"].small").value.nonEmpty){<img class="view" src="@form("info.image["+i+"].small").value" alt="">}
+				}
+				</div>
+			</div>
+			<div class="listImage">
+			@for(i <- 0 to 4){
+				@for(t <- List("origin", "small", "thumb")){
+					@if(form("info.image[" + i + "]." + t +"").value.nonEmpty){<input type="hidden" name="info.image[@i].@t" class="" value="@form("info.image["+i+"]."+t+"").value">}
+				}
+			}
+			</div>
+		</div>
+		@errMsg(form("info.image"))
+	</div>
+
+	<hr>
+
+	<div class="row">
+			<!-- left column -->
+		<div class="col-md-6">
+				<!-- general form elements -->
+			<div class="box box-primary">
+				<!-- form start -->
+
+					<div class="box-body">
+						<div class="form-group">
+							<label for="sku_id">Chọn category (*)</label>
+							<select name="sku_id" id="sku_id" class="form-control">
+								<option value="">Select</option>
+									@for(item <- listCate){
+										<option value="@item.id" @if(form("sku_id").value == item.id) { selected }>@item.name</option>
+									}
+							</select>
+							@errMsg(form("sku_id"))
+						</div>
+
+
+						<div class="form-group">
+							<label for="infogroup">Chọn group (*)</label>
+							<select name="info.group" id="infogroup" class="form-control">
+								<option value="">Select</option>
+								@if(!(form("info.group").value.isEmpty || form("info.group").value == "")){ <option value="@form("info.group").value" selected>@form("info.group").value</option> }
+							</select>
+							@errMsg(form("info.group"))
+						</div>
+
+						@formText("Mã sản phẩm (*)", form("core.code"))
+						@formText("Tên sản phẩm (*)", form("core.name"))
+						@formText("Url Sản phẩm (*)", form("slug"))
+
+						<div class="form-group">
+							<label for="priceContainer">Giá sản phẩm (*) |
+								<a id="morePrice" href="#" onclick="return false">Thêm</a> |
+								<a id="lessPrice" href="#" onclick="return false">Xóa bớt</a>
+							</label>
+							<div id="priceContainer">
+								<div class="priceCount" id="p0">
+									<div class="col-md-6">
+									@formTextWithoutLabel(form("core.price[0].num"), "Số lượng")
+									</div>
+									<div class="col-md-6">
+									@formTextWithoutLabel(form("core.price[0].price"), "Giá")
+									</div>
+								</div>
+							@for(i <- 1 to 4){
+								@if(form("core.price[" + i + "].price").value.isDefined) {
+									<div class="priceCount" id="p@i">
+										<div class="col-md-6">
+										@formTextWithoutLabel(form("core.price[" + i + "].num"), "Số lượng")
+										</div>
+										<div class="col-md-6">
+										@formTextWithoutLabel(form("core.price[" + i + "].price"), "Giá")
+										</div>
+									</div>
+								}
+							}
+							</div>
+							@errMsg(form("core.price"))
+						</div>
+
+
+
+						@formTextArea("Chú ý", form("extra.note"), 2)
+					</div><!-- /.box -->
+			</div><!-- /.box -->
+		</div>
+
+		<div class="col-md-6">
+			<div class="box box-primary">
+				<!-- general form elements -->
+				<div class="box-body">
+						<!-- form start -->
+					@formInfo("Nhãn hiệu", form("info.brand"), listBrand, true)
+					@formInfo("Xuất xứ", form("info.origin"), listOrigin, true)
+					@formInfo("Kiểu chân", form("info.legType"), listLegType, true)
+					@formInfo("Số chân", form("info.legNumber"), listLegNumber, true)
+					<hr>
+
+					@formNumber("Stock (Trong kho) (*)", form("info.stock"))
+					@formInfo("Đơn vị (*)", form("info.unit"), List("Cái", "Con", "Bộ"))
+					@formNumber("Sold (*)", form("info.sold"))
+					@formNumber("% saleOff", form("extra.saleOff1"))
+					@formNumber("$ saleOff", form("extra.saleOff2"))
+
+				</div><!-- /.box -->
+			</div><!-- /.box -->
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class='row'>
+				<div class='col-md-12'>
+					<div class='box box-info'>
+						<div class='box-header'>
+							<h3 class='box-title'>Thông tin sản phẩm:</h3>
+								<!-- tools box -->
+							<div class="pull-right box-tools">
+								<button class="btn btn-info btn-sm" data-widget='collapse' data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+
+							</div><!-- /. tools -->
+						</div><!-- /.box-header -->
+						<div class='box-body pad'>
+
+								<textarea id="editor1" name="extra.info" rows="10" cols="80">
+									@form("extra.info").value
+								</textarea>
+
+						</div>
+					</div><!-- /.box -->
+
+				</div><!-- /.col-->
+			</div><!-- ./row -->
+		</div>
+	</div>
+
+</form>
+
+	<div id="slide" class="well">
+		<div class="list-images" style="height: 430px;"></div>
+		<hr/>
+		<div class="images-view" style="float: left; cursor: no-drop"><div></div></div>
+		<div style="display: inline; float: right; cursor: pointer" class="imageOk slide_close">
+			<button>ok</button>
+		</div>
+	</div>
+
+
+}

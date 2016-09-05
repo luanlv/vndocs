@@ -1,0 +1,29 @@
+@import play.api.libs.json.JsObject
+@import play.api.libs.json.JsNull
+@import play.api.libs.json.JsArray
+@(listMenu: List[JsObject])
+
+@{
+	def makeA(href: String, str: String): String = "<a href=\"" + href + "\" class=\"\">" + str + "</a>"
+
+	def render(listMenu: List[JsObject]): String = {
+		val x = for(o <- listMenu) yield {
+			val sub = if((o \ "children").getOrElse(JsArray()) != JsArray()){
+				"<ul>" +
+					render((o\"children").as[List[JsObject]]) +
+					"</ul>"
+			} else {
+				""
+			}
+
+			"<li>" +
+				"<div class=\"icon\"></div>" +
+				makeA((o\"http").as[String], (o\"title").as[String]) +
+				sub +
+				"</li>"
+		}
+
+		x.foldLeft(""){(x, y) => x + y}
+	}
+	Html("<ul>" + render(listMenu) + "</ul>")
+}

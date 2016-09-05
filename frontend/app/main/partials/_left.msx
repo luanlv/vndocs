@@ -1,0 +1,15 @@
+var fn = require('../../core/fn.msx');
+var data = require('../../core/data.js');
+
+var Left = function(ctrl){
+    url = 'http://' + document.domain + ':9000' + m.route();
+    return m('.left', {
+        config: function(){
+
+        }
+    }, m('#sideMenu', fn.runCreateMenu(window.menu, 1)))
+};
+
+
+
+module.exports = Left;

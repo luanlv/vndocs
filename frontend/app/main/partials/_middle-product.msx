@@ -1,0 +1,62 @@
+var fn = require('../../core/fn.msx');
+
+var Middle =  function(ctrl){
+    var status_loading = ctrl.product().status === "loading";
+    var status_ok = ctrl.product().status === "ok";
+
+    return (
+        <div className="productWrap clearfix">
+            {!ctrl.request.ready()?(
+                <div className="mid">
+                    <div class="loader">Loading...</div>
+                </div>
+            ):(
+                (ctrl.product().length < 0)?(
+                    <div>
+                        <div className="noProduct">Hiện chưa có sản phẩm nào !</div>
+                    </div>
+                ):(
+                    <div class>
+                        <div className="clearfix">
+                            <div className="breadCrumb">{fn.buildBreadcrumb(window.urls, window.allCategory,ctrl.product()[0].sku.slug, []).reverse()} <div className="current">{window.allCategory.getItemByParam({slug: ctrl.product()[0].sku.slug}).name}</div></div>
+                        </div>
+                        <div className="p-top clearfix">
+                            <div className="pt-left">
+                                <img src={ctrl.product()[0].info.image[0].small} alt=""
+                                    onclick={function(){
+                                            ctrl.zoom=true;
+                                        }
+                                    }
+                                />
+                            </div>
+                            <div className="pt-right">
+                                <h1 className="name">{ctrl.product()[0].core.name}</h1>
+                                <div className="msp">Mã Sản phẩm: <span>{ctrl.product()[0].core.code}</span></div>
+                                <div className="price">Giá: <span>{fn.price(ctrl.product()[0].core.price[0].price)} VNĐ</span></div>
+                            </div>
+                        </div>
+                        <div className="p-bot">
+
+                        </div>
+                        {ctrl.zoom?(<div className="zoomWr">
+                            <div className="zoomImageWr noScroll zoomIn animated ">
+                                <img class="" src={ctrl.product()[0].info.image[0].origin} alt=""
+                                 onclick={
+                                    function(event){
+                                        //var el = event.target;
+                                        //el.classList.remove("zoomIn");
+                                        //el.classList.add("zoomOut");
+                                        ctrl.zoom = false;
+                                    }
+                                 }
+                                />
+                            </div>
+                        </div>):""}
+                    </div>
+                )
+            )}
+        </div>
+    )
+};
+
+module.exports = Middle;

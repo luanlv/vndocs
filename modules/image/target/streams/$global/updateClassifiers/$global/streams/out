@@ -1,0 +1,772 @@
+[debug] :: building artificial module descriptors from org.lichess#image$sources_2.11;2.0
+[debug] ::: dd: dependency: org.eclipse.jetty#jetty-http;8.1.15.v20140411 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: jetty-http:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.fasterxml.jackson.core#jackson-annotations;2.5.4 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jackson-annotations:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.fluentlenium#fluentlenium-core;0.10.3 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: fluentlenium-core:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.slf4j#jcl-over-slf4j;1.7.12 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jcl-over-slf4j:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: ch.qos.logback#logback-classic;1.1.3 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: logback-classic:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.httpcomponents#httpmime;4.3.3 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: httpmime:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: commons-logging#commons-logging;1.1.3 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: commons-logging:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-server_2.11;2.4.6 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play-server_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-library;2.11.8 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-library:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalaz.stream#scalaz-stream_2.11;0.7a {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scalaz-stream_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: net.sourceforge.cssparser#cssparser;0.9.14 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: cssparser:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.reactivemongo#play2-reactivemongo_2.11;0.11.7.play24 {provided=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: play2-reactivemongo_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.logging.log4j#log4j-core;2.0.2 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: log4j-core:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: xerces#xercesImpl;2.11.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: xercesImpl:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.commons#commons-lang3;3.4 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: commons-lang3:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-safari-driver;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-safari-driver:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.logging.log4j#log4j-to-slf4j;2.0.2 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: log4j-to-slf4j:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalaz#scalaz-effect_2.11;7.1.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scalaz-effect_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-json_2.11;2.4.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play-json_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.reactivemongo#reactivemongo_2.11;0.11.9 {provided=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: reactivemongo_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.slf4j#jul-to-slf4j;1.7.12 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jul-to-slf4j:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.specs2#specs2-common_2.11;3.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: specs2-common_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-netty-utils;2.4.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play-netty-utils:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-compiler;2.11.7 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-compiler:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#twirl-api_2.11;1.1.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: twirl-api_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.httpcomponents#httpcore;4.3.2 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: httpcore:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.netty#netty-http-pipelining;1.1.4 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: netty-http-pipelining:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.google.code.findbugs#jsr305;2.0.3 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jsr305:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: oauth.signpost#signpost-core;1.2.1.2 {compile=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], test=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: signpost-core:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-slf4j_2.11;2.3.13 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: akka-slf4j_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-parser-combinators_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-chrome-driver;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-chrome-driver:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: net.sourceforge.htmlunit#htmlunit-core-js;2.15 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: htmlunit-core-js:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: net.java.dev.jna#jna;3.4.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: jna:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-test_2.11;2.4.6 {provided=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: play-test_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: net.java.dev.jna#platform;3.4.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: platform:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.google.code.findbugs#jsr305;3.0.1 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: jsr305:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-ie-driver;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-ie-driver:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.httpcomponents#httpclient;4.3.4 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: httpclient:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: net.sourceforge.nekohtml#nekohtml;1.9.21 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: nekohtml:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.eclipse.jetty#jetty-io;8.1.15.v20140411 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: jetty-io:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-java;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-java:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-compiler;2.11.8 {scala-tool=[default, compile, runtime, optional, optional(default), master]} (artifacts: scala-compiler:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.webbitserver#webbit;0.4.14 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: webbit:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.google.guava#guava;18.0 {provided=[master(*), compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: guava:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-api;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-api:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.4.2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: concurrentlinkedhashmap-lru:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-library;2.11.7 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)]} (artifacts: scala-library:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: joda-time#joda-time;2.9.4 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: joda-time:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.google.guava#guava;19.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: guava:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.google.inject.extensions#guice-assistedinject;4.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: guice-assistedinject:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.reactivemongo#reactivemongo-bson-macros_2.11;0.11.9 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: reactivemongo-bson-macros_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-firefox-driver;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-firefox-driver:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: io.netty#netty;3.10.1.Final {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: netty:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play_2.11;2.4.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[default, compile, runtime, default(compile), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-actor_2.11;2.3.13 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: akka-actor_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.4 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-xml_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.slf4j#slf4j-api;1.7.12 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: slf4j-api:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: io.netty#netty;3.10.4.Final {provided=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)]} (artifacts: netty:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: io.spray#spray-util_2.11;1.3.3 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: spray-util_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.eclipse.jetty#jetty-util;8.1.15.v20140411 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: jetty-util:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.specs2#specs2-core_2.11;3.6 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: specs2-core_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.5 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-xml_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: commons-logging#commons-logging;1.1.1 {compile=[master(*), compile, runtime(*), runtime, compile(*), master], runtime=[master(*), compile, runtime(*), runtime, compile(*), master], test=[master(*), compile, runtime(*), runtime, compile(*), master], runtime-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: commons-logging:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-reflect;2.11.7 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-reflect:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: joda-time#joda-time;2.8.1 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: joda-time:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-remote-driver;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-remote-driver:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.github.ornicar#scalalib_2.11;5.5 {compile=[compile, default(compile)], runtime=[compile, default(compile)], test=[compile, default(compile)], compile-internal=[compile, default(compile)], runtime-internal=[compile, default(compile)], test-internal=[compile, default(compile)]} (artifacts: scalalib_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scodec#scodec-bits_2.11;1.0.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scodec-bits_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-datacommons_2.11;2.4.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play-datacommons_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: xalan#xalan;2.7.1 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: xalan:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.httpcomponents#httpclient;4.0.1 {compile=[master(*), compile, runtime(*), runtime, compile(*), master], runtime=[master(*), compile, runtime(*), runtime, compile(*), master], test=[master(*), compile, runtime(*), runtime, compile(*), master], runtime-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: httpclient:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.joda#joda-convert;1.7 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: joda-convert:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.logging.log4j#log4j-api;2.0.2 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: log4j-api:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalaz#scalaz-core_2.11;7.1.9 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: scalaz-core_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: commons-codec#commons-codec;1.10 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], test=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)]} (artifacts: commons-codec:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#build-link;2.4.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: build-link:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.javassist#javassist;3.19.0-GA {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: javassist:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.google.inject#guice;4.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: guice:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: commons-io#commons-io;2.4 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: commons-io:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: io.spray#spray-caching_2.11;1.3.3 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: spray-caching_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-htmlunit-driver;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-htmlunit-driver:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.5.4 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jackson-datatype-jsr310:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.fasterxml.jackson.core#jackson-databind;2.5.4 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jackson-databind:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.httpcomponents#httpcore;4.0.1 {compile=[master(*), compile, runtime(*), runtime, compile(*), master], runtime=[master(*), compile, runtime(*), runtime, compile(*), master], test=[master(*), compile, runtime(*), runtime, compile(*), master], runtime-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: httpcore:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-stm#scala-stm_2.11;0.7 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-stm_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.w3c.css#sac;1.3 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: sac:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.5.4 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jackson-datatype-jdk8:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.google.code.gson#gson;2.3 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: gson:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: junit#junit;4.12 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master, master(*)]} (artifacts: junit:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: javax.transaction#jta;1.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jta:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.reactivemongo#reactivemongo-bson_2.11;0.11.9 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: reactivemongo-bson_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-netty-server_2.11;2.4.6 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play-netty-server_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-exceptions;2.4.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play-exceptions:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.hamcrest#hamcrest-core;1.3 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: hamcrest-core:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: jline#jline;2.12.1 {scala-tool=[compile, master(compile), compile(*), master]} (artifacts: jline:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-ws_2.11;2.4.6 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: play-ws_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: aopalliance#aopalliance;1.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: aopalliance:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: net.sourceforge.htmlunit#htmlunit;2.15 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: htmlunit:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: xml-apis#xml-apis;1.4.01 {compile=[master(*), compile, runtime(*), runtime, compile(*), master], runtime=[master(*), compile, runtime(*), runtime, compile(*), master], test=[master(*), compile, runtime(*), runtime, compile(*), master], provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], runtime-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: xml-apis:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.commons#commons-exec;1.1 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: commons-exec:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.specs2#specs2-matcher_2.11;3.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: specs2-matcher_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: ch.qos.logback#logback-core;1.1.3 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: logback-core:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-reflect;2.11.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-reflect:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-sbt#test-interface;1.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: test-interface:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: commons-collections#commons-collections;3.2.1 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: commons-collections:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe#config;1.3.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: config:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-iteratees_2.11;2.4.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play-iteratees_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.fasterxml.jackson.core#jackson-core;2.5.4 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: jackson-core:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.play#play-functional_2.11;2.4.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: play-functional_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.seleniumhq.selenium#selenium-support;2.44.0 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: selenium-support:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: cglib#cglib-nodep;2.1_3 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: cglib-nodep:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: javax.inject#javax.inject;1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: javax.inject:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.novocode#junit-interface;0.11 {provided=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: junit-interface:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalaz#scalaz-concurrent_2.11;7.1.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scalaz-concurrent_2.11:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-reflect;2.11.8 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-reflect:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.eclipse.jetty#jetty-websocket;8.1.15.v20140411 {provided=[master(*), compile, runtime(*), runtime, compile(*), master], compile-internal=[master(*), compile, runtime(*), runtime, compile(*), master], test-internal=[master(*), compile, runtime(*), runtime, compile(*), master]} (artifacts: jetty-websocket:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.ning#async-http-client;1.9.21 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: async-http-client:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: oauth.signpost#signpost-commonshttp4;1.2.1.2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: signpost-commonshttp4:src:jar:{classifier=sources})
+[debug] :: merging update reports
+[debug] ::: -----------
+[debug] :: compile: loop: List()
+[debug] :: sort result: com.fasterxml.jackson.core:jackson-annotations, org.slf4j:jcl-over-slf4j, ch.qos.logback:logback-classic, org.scala-lang:scala-library, org.scalaz.stream:scalaz-stream_2.11, xerces:xercesImpl, org.apache.commons:commons-lang3, org.scalaz:scalaz-effect_2.11, com.typesafe.play:play-json_2.11, org.slf4j:jul-to-slf4j, org.specs2:specs2-common_2.11, com.typesafe.play:play-netty-utils, com.typesafe.play:twirl-api_2.11, oauth.signpost:signpost-core, com.typesafe.akka:akka-slf4j_2.11, org.scala-lang.modules:scala-parser-combinators_2.11, com.google.code.findbugs:jsr305, com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru, joda-time:joda-time, com.google.guava:guava, com.google.inject.extensions:guice-assistedinject, io.netty:netty, com.typesafe.play:play_2.11, com.typesafe.akka:akka-actor_2.11, org.slf4j:slf4j-api, io.spray:spray-util_2.11, org.specs2:specs2-core_2.11, org.scala-lang.modules:scala-xml_2.11, commons-logging:commons-logging, com.github.ornicar:scalalib_2.11, org.scodec:scodec-bits_2.11, com.typesafe.play:play-datacommons_2.11, org.apache.httpcomponents:httpclient, org.joda:joda-convert, org.scalaz:scalaz-core_2.11, commons-codec:commons-codec, com.typesafe.play:build-link, org.javassist:javassist, com.google.inject:guice, io.spray:spray-caching_2.11, com.fasterxml.jackson.datatype:jackson-datatype-jsr310, com.fasterxml.jackson.core:jackson-databind, org.apache.httpcomponents:httpcore, org.scala-stm:scala-stm_2.11, com.fasterxml.jackson.datatype:jackson-datatype-jdk8, javax.transaction:jta, com.typesafe.play:play-exceptions, com.typesafe.play:play-ws_2.11, aopalliance:aopalliance, xml-apis:xml-apis, org.specs2:specs2-matcher_2.11, ch.qos.logback:logback-core, org.scala-lang:scala-reflect, com.typesafe:config, com.typesafe.play:play-iteratees_2.11, com.fasterxml.jackson.core:jackson-core, com.typesafe.play:play-functional_2.11, javax.inject:javax.inject, org.scalaz:scalaz-concurrent_2.11, com.ning:async-http-client, oauth.signpost:signpost-commonshttp4
+[debug] :: no conflict compile: com.fasterxml.jackson.core:jackson-annotations
+[debug] :: no conflict compile: org.slf4j:jcl-over-slf4j
+[debug] :: no conflict compile: ch.qos.logback:logback-classic
+[debug] :: no conflict compile: org.scala-lang:scala-library
+[debug] :: no conflict compile: org.scalaz.stream:scalaz-stream_2.11
+[debug] :: no conflict compile: xerces:xercesImpl
+[debug] :: no conflict compile: org.apache.commons:commons-lang3
+[debug] :: no conflict compile: org.scalaz:scalaz-effect_2.11
+[debug] :: no conflict compile: com.typesafe.play:play-json_2.11
+[debug] :: no conflict compile: org.slf4j:jul-to-slf4j
+[debug] :: no conflict compile: org.specs2:specs2-common_2.11
+[debug] :: no conflict compile: com.typesafe.play:play-netty-utils
+[debug] :: no conflict compile: com.typesafe.play:twirl-api_2.11
+[debug] :: no conflict compile: oauth.signpost:signpost-core
+[debug] :: no conflict compile: com.typesafe.akka:akka-slf4j_2.11
+[debug] :: no conflict compile: org.scala-lang.modules:scala-parser-combinators_2.11
+[debug] :: no conflict compile: com.google.code.findbugs:jsr305
+[debug] :: no conflict compile: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru
+[debug] :: no conflict compile: joda-time:joda-time
+[debug] :: no conflict compile: com.google.guava:guava
+[debug] :: no conflict compile: com.google.inject.extensions:guice-assistedinject
+[debug] :: no conflict compile: io.netty:netty
+[debug] :: no conflict compile: com.typesafe.play:play_2.11
+[debug] :: no conflict compile: com.typesafe.akka:akka-actor_2.11
+[debug] :: no conflict compile: org.slf4j:slf4j-api
+[debug] :: no conflict compile: io.spray:spray-util_2.11
+[debug] :: no conflict compile: org.specs2:specs2-core_2.11
+[debug] :: no conflict compile: org.scala-lang.modules:scala-xml_2.11
+[debug] :: no conflict compile: commons-logging:commons-logging
+[debug] :: no conflict compile: com.github.ornicar:scalalib_2.11
+[debug] :: no conflict compile: org.scodec:scodec-bits_2.11
+[debug] :: no conflict compile: com.typesafe.play:play-datacommons_2.11
+[debug] :: no conflict compile: org.apache.httpcomponents:httpclient
+[debug] :: no conflict compile: org.joda:joda-convert
+[debug] :: no conflict compile: org.scalaz:scalaz-core_2.11
+[debug] :: no conflict compile: commons-codec:commons-codec
+[debug] :: no conflict compile: com.typesafe.play:build-link
+[debug] :: no conflict compile: org.javassist:javassist
+[debug] :: no conflict compile: com.google.inject:guice
+[debug] :: no conflict compile: io.spray:spray-caching_2.11
+[debug] :: no conflict compile: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+[debug] :: no conflict compile: com.fasterxml.jackson.core:jackson-databind
+[debug] :: no conflict compile: org.apache.httpcomponents:httpcore
+[debug] :: no conflict compile: org.scala-stm:scala-stm_2.11
+[debug] :: no conflict compile: com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+[debug] :: no conflict compile: javax.transaction:jta
+[debug] :: no conflict compile: com.typesafe.play:play-exceptions
+[debug] :: no conflict compile: com.typesafe.play:play-ws_2.11
+[debug] :: no conflict compile: aopalliance:aopalliance
+[debug] :: no conflict compile: xml-apis:xml-apis
+[debug] :: no conflict compile: org.specs2:specs2-matcher_2.11
+[debug] :: no conflict compile: ch.qos.logback:logback-core
+[debug] :: no conflict compile: org.scala-lang:scala-reflect
+[debug] :: no conflict compile: com.typesafe:config
+[debug] :: no conflict compile: com.typesafe.play:play-iteratees_2.11
+[debug] :: no conflict compile: com.fasterxml.jackson.core:jackson-core
+[debug] :: no conflict compile: com.typesafe.play:play-functional_2.11
+[debug] :: no conflict compile: javax.inject:javax.inject
+[debug] :: no conflict compile: org.scalaz:scalaz-concurrent_2.11
+[debug] :: no conflict compile: com.ning:async-http-client
+[debug] :: no conflict compile: oauth.signpost:signpost-commonshttp4
+[debug] ::: -----------
+[debug] :: runtime: loop: List()
+[debug] :: sort result: com.fasterxml.jackson.core:jackson-annotations, org.slf4j:jcl-over-slf4j, ch.qos.logback:logback-classic, org.scala-lang:scala-library, org.scalaz.stream:scalaz-stream_2.11, xerces:xercesImpl, org.apache.commons:commons-lang3, org.scalaz:scalaz-effect_2.11, com.typesafe.play:play-json_2.11, org.slf4j:jul-to-slf4j, org.specs2:specs2-common_2.11, com.typesafe.play:play-netty-utils, com.typesafe.play:twirl-api_2.11, oauth.signpost:signpost-core, com.typesafe.akka:akka-slf4j_2.11, org.scala-lang.modules:scala-parser-combinators_2.11, com.google.code.findbugs:jsr305, com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru, joda-time:joda-time, com.google.guava:guava, com.google.inject.extensions:guice-assistedinject, io.netty:netty, com.typesafe.play:play_2.11, com.typesafe.akka:akka-actor_2.11, org.slf4j:slf4j-api, io.spray:spray-util_2.11, org.specs2:specs2-core_2.11, org.scala-lang.modules:scala-xml_2.11, commons-logging:commons-logging, com.github.ornicar:scalalib_2.11, org.scodec:scodec-bits_2.11, com.typesafe.play:play-datacommons_2.11, org.apache.httpcomponents:httpclient, org.joda:joda-convert, org.scalaz:scalaz-core_2.11, commons-codec:commons-codec, com.typesafe.play:build-link, org.javassist:javassist, com.google.inject:guice, io.spray:spray-caching_2.11, com.fasterxml.jackson.datatype:jackson-datatype-jsr310, com.fasterxml.jackson.core:jackson-databind, org.apache.httpcomponents:httpcore, org.scala-stm:scala-stm_2.11, com.fasterxml.jackson.datatype:jackson-datatype-jdk8, javax.transaction:jta, com.typesafe.play:play-exceptions, com.typesafe.play:play-ws_2.11, aopalliance:aopalliance, xml-apis:xml-apis, org.specs2:specs2-matcher_2.11, ch.qos.logback:logback-core, org.scala-lang:scala-reflect, com.typesafe:config, com.typesafe.play:play-iteratees_2.11, com.fasterxml.jackson.core:jackson-core, com.typesafe.play:play-functional_2.11, javax.inject:javax.inject, org.scalaz:scalaz-concurrent_2.11, com.ning:async-http-client, oauth.signpost:signpost-commonshttp4
+[debug] :: no conflict runtime: com.fasterxml.jackson.core:jackson-annotations
+[debug] :: no conflict runtime: org.slf4j:jcl-over-slf4j
+[debug] :: no conflict runtime: ch.qos.logback:logback-classic
+[debug] :: no conflict runtime: org.scala-lang:scala-library
+[debug] :: no conflict runtime: org.scalaz.stream:scalaz-stream_2.11
+[debug] :: no conflict runtime: xerces:xercesImpl
+[debug] :: no conflict runtime: org.apache.commons:commons-lang3
+[debug] :: no conflict runtime: org.scalaz:scalaz-effect_2.11
+[debug] :: no conflict runtime: com.typesafe.play:play-json_2.11
+[debug] :: no conflict runtime: org.slf4j:jul-to-slf4j
+[debug] :: no conflict runtime: org.specs2:specs2-common_2.11
+[debug] :: no conflict runtime: com.typesafe.play:play-netty-utils
+[debug] :: no conflict runtime: com.typesafe.play:twirl-api_2.11
+[debug] :: no conflict runtime: oauth.signpost:signpost-core
+[debug] :: no conflict runtime: com.typesafe.akka:akka-slf4j_2.11
+[debug] :: no conflict runtime: org.scala-lang.modules:scala-parser-combinators_2.11
+[debug] :: no conflict runtime: com.google.code.findbugs:jsr305
+[debug] :: no conflict runtime: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru
+[debug] :: no conflict runtime: joda-time:joda-time
+[debug] :: no conflict runtime: com.google.guava:guava
+[debug] :: no conflict runtime: com.google.inject.extensions:guice-assistedinject
+[debug] :: no conflict runtime: io.netty:netty
+[debug] :: no conflict runtime: com.typesafe.play:play_2.11
+[debug] :: no conflict runtime: com.typesafe.akka:akka-actor_2.11
+[debug] :: no conflict runtime: org.slf4j:slf4j-api
+[debug] :: no conflict runtime: io.spray:spray-util_2.11
+[debug] :: no conflict runtime: org.specs2:specs2-core_2.11
+[debug] :: no conflict runtime: org.scala-lang.modules:scala-xml_2.11
+[debug] :: no conflict runtime: commons-logging:commons-logging
+[debug] :: no conflict runtime: com.github.ornicar:scalalib_2.11
+[debug] :: no conflict runtime: org.scodec:scodec-bits_2.11
+[debug] :: no conflict runtime: com.typesafe.play:play-datacommons_2.11
+[debug] :: no conflict runtime: org.apache.httpcomponents:httpclient
+[debug] :: no conflict runtime: org.joda:joda-convert
+[debug] :: no conflict runtime: org.scalaz:scalaz-core_2.11
+[debug] :: no conflict runtime: commons-codec:commons-codec
+[debug] :: no conflict runtime: com.typesafe.play:build-link
+[debug] :: no conflict runtime: org.javassist:javassist
+[debug] :: no conflict runtime: com.google.inject:guice
+[debug] :: no conflict runtime: io.spray:spray-caching_2.11
+[debug] :: no conflict runtime: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+[debug] :: no conflict runtime: com.fasterxml.jackson.core:jackson-databind
+[debug] :: no conflict runtime: org.apache.httpcomponents:httpcore
+[debug] :: no conflict runtime: org.scala-stm:scala-stm_2.11
+[debug] :: no conflict runtime: com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+[debug] :: no conflict runtime: javax.transaction:jta
+[debug] :: no conflict runtime: com.typesafe.play:play-exceptions
+[debug] :: no conflict runtime: com.typesafe.play:play-ws_2.11
+[debug] :: no conflict runtime: aopalliance:aopalliance
+[debug] :: no conflict runtime: xml-apis:xml-apis
+[debug] :: no conflict runtime: org.specs2:specs2-matcher_2.11
+[debug] :: no conflict runtime: ch.qos.logback:logback-core
+[debug] :: no conflict runtime: org.scala-lang:scala-reflect
+[debug] :: no conflict runtime: com.typesafe:config
+[debug] :: no conflict runtime: com.typesafe.play:play-iteratees_2.11
+[debug] :: no conflict runtime: com.fasterxml.jackson.core:jackson-core
+[debug] :: no conflict runtime: com.typesafe.play:play-functional_2.11
+[debug] :: no conflict runtime: javax.inject:javax.inject
+[debug] :: no conflict runtime: org.scalaz:scalaz-concurrent_2.11
+[debug] :: no conflict runtime: com.ning:async-http-client
+[debug] :: no conflict runtime: oauth.signpost:signpost-commonshttp4
+[debug] ::: -----------
+[debug] :: test: loop: List()
+[debug] :: sort result: com.fasterxml.jackson.core:jackson-annotations, org.slf4j:jcl-over-slf4j, ch.qos.logback:logback-classic, org.scala-lang:scala-library, org.scalaz.stream:scalaz-stream_2.11, xerces:xercesImpl, org.apache.commons:commons-lang3, org.scalaz:scalaz-effect_2.11, com.typesafe.play:play-json_2.11, org.slf4j:jul-to-slf4j, org.specs2:specs2-common_2.11, com.typesafe.play:play-netty-utils, com.typesafe.play:twirl-api_2.11, oauth.signpost:signpost-core, com.typesafe.akka:akka-slf4j_2.11, org.scala-lang.modules:scala-parser-combinators_2.11, com.google.code.findbugs:jsr305, com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru, joda-time:joda-time, com.google.guava:guava, com.google.inject.extensions:guice-assistedinject, io.netty:netty, com.typesafe.play:play_2.11, com.typesafe.akka:akka-actor_2.11, org.slf4j:slf4j-api, io.spray:spray-util_2.11, org.specs2:specs2-core_2.11, org.scala-lang.modules:scala-xml_2.11, commons-logging:commons-logging, com.github.ornicar:scalalib_2.11, org.scodec:scodec-bits_2.11, com.typesafe.play:play-datacommons_2.11, org.apache.httpcomponents:httpclient, org.joda:joda-convert, org.scalaz:scalaz-core_2.11, commons-codec:commons-codec, com.typesafe.play:build-link, org.javassist:javassist, com.google.inject:guice, io.spray:spray-caching_2.11, com.fasterxml.jackson.datatype:jackson-datatype-jsr310, com.fasterxml.jackson.core:jackson-databind, org.apache.httpcomponents:httpcore, org.scala-stm:scala-stm_2.11, com.fasterxml.jackson.datatype:jackson-datatype-jdk8, javax.transaction:jta, com.typesafe.play:play-exceptions, com.typesafe.play:play-ws_2.11, aopalliance:aopalliance, xml-apis:xml-apis, org.specs2:specs2-matcher_2.11, ch.qos.logback:logback-core, org.scala-lang:scala-reflect, com.typesafe:config, com.typesafe.play:play-iteratees_2.11, com.fasterxml.jackson.core:jackson-core, com.typesafe.play:play-functional_2.11, javax.inject:javax.inject, org.scalaz:scalaz-concurrent_2.11, com.ning:async-http-client, oauth.signpost:signpost-commonshttp4
+[debug] :: no conflict test: com.fasterxml.jackson.core:jackson-annotations
+[debug] :: no conflict test: org.slf4j:jcl-over-slf4j
+[debug] :: no conflict test: ch.qos.logback:logback-classic
+[debug] :: no conflict test: org.scala-lang:scala-library
+[debug] :: no conflict test: org.scalaz.stream:scalaz-stream_2.11
+[debug] :: no conflict test: xerces:xercesImpl
+[debug] :: no conflict test: org.apache.commons:commons-lang3
+[debug] :: no conflict test: org.scalaz:scalaz-effect_2.11
+[debug] :: no conflict test: com.typesafe.play:play-json_2.11
+[debug] :: no conflict test: org.slf4j:jul-to-slf4j
+[debug] :: no conflict test: org.specs2:specs2-common_2.11
+[debug] :: no conflict test: com.typesafe.play:play-netty-utils
+[debug] :: no conflict test: com.typesafe.play:twirl-api_2.11
+[debug] :: no conflict test: oauth.signpost:signpost-core
+[debug] :: no conflict test: com.typesafe.akka:akka-slf4j_2.11
+[debug] :: no conflict test: org.scala-lang.modules:scala-parser-combinators_2.11
+[debug] :: no conflict test: com.google.code.findbugs:jsr305
+[debug] :: no conflict test: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru
+[debug] :: no conflict test: joda-time:joda-time
+[debug] :: no conflict test: com.google.guava:guava
+[debug] :: no conflict test: com.google.inject.extensions:guice-assistedinject
+[debug] :: no conflict test: io.netty:netty
+[debug] :: no conflict test: com.typesafe.play:play_2.11
+[debug] :: no conflict test: com.typesafe.akka:akka-actor_2.11
+[debug] :: no conflict test: org.slf4j:slf4j-api
+[debug] :: no conflict test: io.spray:spray-util_2.11
+[debug] :: no conflict test: org.specs2:specs2-core_2.11
+[debug] :: no conflict test: org.scala-lang.modules:scala-xml_2.11
+[debug] :: no conflict test: commons-logging:commons-logging
+[debug] :: no conflict test: com.github.ornicar:scalalib_2.11
+[debug] :: no conflict test: org.scodec:scodec-bits_2.11
+[debug] :: no conflict test: com.typesafe.play:play-datacommons_2.11
+[debug] :: no conflict test: org.apache.httpcomponents:httpclient
+[debug] :: no conflict test: org.joda:joda-convert
+[debug] :: no conflict test: org.scalaz:scalaz-core_2.11
+[debug] :: no conflict test: commons-codec:commons-codec
+[debug] :: no conflict test: com.typesafe.play:build-link
+[debug] :: no conflict test: org.javassist:javassist
+[debug] :: no conflict test: com.google.inject:guice
+[debug] :: no conflict test: io.spray:spray-caching_2.11
+[debug] :: no conflict test: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+[debug] :: no conflict test: com.fasterxml.jackson.core:jackson-databind
+[debug] :: no conflict test: org.apache.httpcomponents:httpcore
+[debug] :: no conflict test: org.scala-stm:scala-stm_2.11
+[debug] :: no conflict test: com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+[debug] :: no conflict test: javax.transaction:jta
+[debug] :: no conflict test: com.typesafe.play:play-exceptions
+[debug] :: no conflict test: com.typesafe.play:play-ws_2.11
+[debug] :: no conflict test: aopalliance:aopalliance
+[debug] :: no conflict test: xml-apis:xml-apis
+[debug] :: no conflict test: org.specs2:specs2-matcher_2.11
+[debug] :: no conflict test: ch.qos.logback:logback-core
+[debug] :: no conflict test: org.scala-lang:scala-reflect
+[debug] :: no conflict test: com.typesafe:config
+[debug] :: no conflict test: com.typesafe.play:play-iteratees_2.11
+[debug] :: no conflict test: com.fasterxml.jackson.core:jackson-core
+[debug] :: no conflict test: com.typesafe.play:play-functional_2.11
+[debug] :: no conflict test: javax.inject:javax.inject
+[debug] :: no conflict test: org.scalaz:scalaz-concurrent_2.11
+[debug] :: no conflict test: com.ning:async-http-client
+[debug] :: no conflict test: oauth.signpost:signpost-commonshttp4
+[debug] ::: -----------
+[debug] :: provided: loop: List()
+[debug] :: sort result: org.eclipse.jetty:jetty-http, com.fasterxml.jackson.core:jackson-annotations, org.fluentlenium:fluentlenium-core, org.slf4j:jcl-over-slf4j, ch.qos.logback:logback-classic, org.apache.httpcomponents:httpmime, commons-logging:commons-logging, com.typesafe.play:play-server_2.11, net.sourceforge.cssparser:cssparser, org.reactivemongo:play2-reactivemongo_2.11, org.apache.logging.log4j:log4j-core, xerces:xercesImpl, org.apache.commons:commons-lang3, org.seleniumhq.selenium:selenium-safari-driver, org.apache.logging.log4j:log4j-to-slf4j, com.typesafe.play:play-json_2.11, org.reactivemongo:reactivemongo_2.11, org.slf4j:jul-to-slf4j, com.typesafe.play:play-netty-utils, org.scala-lang:scala-compiler, com.typesafe.play:twirl-api_2.11, org.apache.httpcomponents:httpcore, com.typesafe.netty:netty-http-pipelining, com.google.code.findbugs:jsr305, com.typesafe.akka:akka-slf4j_2.11, org.scala-lang.modules:scala-parser-combinators_2.11, org.seleniumhq.selenium:selenium-chrome-driver, net.sourceforge.htmlunit:htmlunit-core-js, net.java.dev.jna:jna, com.typesafe.play:play-test_2.11, net.java.dev.jna:platform, org.seleniumhq.selenium:selenium-ie-driver, org.apache.httpcomponents:httpclient, net.sourceforge.nekohtml:nekohtml, org.eclipse.jetty:jetty-io, org.seleniumhq.selenium:selenium-java, org.webbitserver:webbit, com.google.guava:guava, org.seleniumhq.selenium:selenium-api, org.scala-lang:scala-library, com.google.inject.extensions:guice-assistedinject, org.reactivemongo:reactivemongo-bson-macros_2.11, org.seleniumhq.selenium:selenium-firefox-driver, com.typesafe.play:play_2.11, com.typesafe.akka:akka-actor_2.11, org.scala-lang.modules:scala-xml_2.11, org.slf4j:slf4j-api, io.netty:netty, org.eclipse.jetty:jetty-util, org.scala-lang:scala-reflect, joda-time:joda-time, org.seleniumhq.selenium:selenium-remote-driver, com.typesafe.play:play-datacommons_2.11, xalan:xalan, org.joda:joda-convert, org.apache.logging.log4j:log4j-api, commons-codec:commons-codec, com.typesafe.play:build-link, org.javassist:javassist, com.google.inject:guice, commons-io:commons-io, org.seleniumhq.selenium:selenium-htmlunit-driver, com.fasterxml.jackson.datatype:jackson-datatype-jsr310, com.fasterxml.jackson.core:jackson-databind, org.scala-stm:scala-stm_2.11, org.w3c.css:sac, com.fasterxml.jackson.datatype:jackson-datatype-jdk8, com.google.code.gson:gson, junit:junit, javax.transaction:jta, org.reactivemongo:reactivemongo-bson_2.11, com.typesafe.play:play-netty-server_2.11, com.typesafe.play:play-exceptions, org.hamcrest:hamcrest-core, aopalliance:aopalliance, net.sourceforge.htmlunit:htmlunit, xml-apis:xml-apis, org.apache.commons:commons-exec, ch.qos.logback:logback-core, org.scala-sbt:test-interface, commons-collections:commons-collections, com.typesafe:config, com.typesafe.play:play-iteratees_2.11, com.fasterxml.jackson.core:jackson-core, com.typesafe.play:play-functional_2.11, org.seleniumhq.selenium:selenium-support, cglib:cglib-nodep, javax.inject:javax.inject, com.novocode:junit-interface, org.eclipse.jetty:jetty-websocket
+[debug] :: no conflict provided: org.eclipse.jetty:jetty-http
+[debug] :: no conflict provided: com.fasterxml.jackson.core:jackson-annotations
+[debug] :: no conflict provided: org.fluentlenium:fluentlenium-core
+[debug] :: no conflict provided: org.slf4j:jcl-over-slf4j
+[debug] :: no conflict provided: ch.qos.logback:logback-classic
+[debug] :: no conflict provided: org.apache.httpcomponents:httpmime
+[debug] :: no conflict provided: commons-logging:commons-logging
+[debug] :: no conflict provided: com.typesafe.play:play-server_2.11
+[debug] :: no conflict provided: net.sourceforge.cssparser:cssparser
+[debug] :: no conflict provided: org.reactivemongo:play2-reactivemongo_2.11
+[debug] :: no conflict provided: org.apache.logging.log4j:log4j-core
+[debug] :: no conflict provided: xerces:xercesImpl
+[debug] :: no conflict provided: org.apache.commons:commons-lang3
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-safari-driver
+[debug] :: no conflict provided: org.apache.logging.log4j:log4j-to-slf4j
+[debug] :: no conflict provided: com.typesafe.play:play-json_2.11
+[debug] :: no conflict provided: org.reactivemongo:reactivemongo_2.11
+[debug] :: no conflict provided: org.slf4j:jul-to-slf4j
+[debug] :: no conflict provided: com.typesafe.play:play-netty-utils
+[debug] :: no conflict provided: org.scala-lang:scala-compiler
+[debug] :: no conflict provided: com.typesafe.play:twirl-api_2.11
+[debug] :: no conflict provided: org.apache.httpcomponents:httpcore
+[debug] :: no conflict provided: com.typesafe.netty:netty-http-pipelining
+[debug] :: no conflict provided: com.google.code.findbugs:jsr305
+[debug] :: no conflict provided: com.typesafe.akka:akka-slf4j_2.11
+[debug] :: no conflict provided: org.scala-lang.modules:scala-parser-combinators_2.11
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-chrome-driver
+[debug] :: no conflict provided: net.sourceforge.htmlunit:htmlunit-core-js
+[debug] :: no conflict provided: net.java.dev.jna:jna
+[debug] :: no conflict provided: com.typesafe.play:play-test_2.11
+[debug] :: no conflict provided: net.java.dev.jna:platform
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-ie-driver
+[debug] :: no conflict provided: org.apache.httpcomponents:httpclient
+[debug] :: no conflict provided: net.sourceforge.nekohtml:nekohtml
+[debug] :: no conflict provided: org.eclipse.jetty:jetty-io
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-java
+[debug] :: no conflict provided: org.webbitserver:webbit
+[debug] :: no conflict provided: com.google.guava:guava
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-api
+[debug] :: no conflict provided: org.scala-lang:scala-library
+[debug] :: no conflict provided: com.google.inject.extensions:guice-assistedinject
+[debug] :: no conflict provided: org.reactivemongo:reactivemongo-bson-macros_2.11
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-firefox-driver
+[debug] :: no conflict provided: com.typesafe.play:play_2.11
+[debug] :: no conflict provided: com.typesafe.akka:akka-actor_2.11
+[debug] :: no conflict provided: org.scala-lang.modules:scala-xml_2.11
+[debug] :: no conflict provided: org.slf4j:slf4j-api
+[debug] :: no conflict provided: io.netty:netty
+[debug] :: no conflict provided: org.eclipse.jetty:jetty-util
+[debug] :: no conflict provided: org.scala-lang:scala-reflect
+[debug] :: no conflict provided: joda-time:joda-time
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-remote-driver
+[debug] :: no conflict provided: com.typesafe.play:play-datacommons_2.11
+[debug] :: no conflict provided: xalan:xalan
+[debug] :: no conflict provided: org.joda:joda-convert
+[debug] :: no conflict provided: org.apache.logging.log4j:log4j-api
+[debug] :: no conflict provided: commons-codec:commons-codec
+[debug] :: no conflict provided: com.typesafe.play:build-link
+[debug] :: no conflict provided: org.javassist:javassist
+[debug] :: no conflict provided: com.google.inject:guice
+[debug] :: no conflict provided: commons-io:commons-io
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-htmlunit-driver
+[debug] :: no conflict provided: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+[debug] :: no conflict provided: com.fasterxml.jackson.core:jackson-databind
+[debug] :: no conflict provided: org.scala-stm:scala-stm_2.11
+[debug] :: no conflict provided: org.w3c.css:sac
+[debug] :: no conflict provided: com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+[debug] :: no conflict provided: com.google.code.gson:gson
+[debug] :: no conflict provided: junit:junit
+[debug] :: no conflict provided: javax.transaction:jta
+[debug] :: no conflict provided: org.reactivemongo:reactivemongo-bson_2.11
+[debug] :: no conflict provided: com.typesafe.play:play-netty-server_2.11
+[debug] :: no conflict provided: com.typesafe.play:play-exceptions
+[debug] :: no conflict provided: org.hamcrest:hamcrest-core
+[debug] :: no conflict provided: aopalliance:aopalliance
+[debug] :: no conflict provided: net.sourceforge.htmlunit:htmlunit
+[debug] :: no conflict provided: xml-apis:xml-apis
+[debug] :: no conflict provided: org.apache.commons:commons-exec
+[debug] :: no conflict provided: ch.qos.logback:logback-core
+[debug] :: no conflict provided: org.scala-sbt:test-interface
+[debug] :: no conflict provided: commons-collections:commons-collections
+[debug] :: no conflict provided: com.typesafe:config
+[debug] :: no conflict provided: com.typesafe.play:play-iteratees_2.11
+[debug] :: no conflict provided: com.fasterxml.jackson.core:jackson-core
+[debug] :: no conflict provided: com.typesafe.play:play-functional_2.11
+[debug] :: no conflict provided: org.seleniumhq.selenium:selenium-support
+[debug] :: no conflict provided: cglib:cglib-nodep
+[debug] :: no conflict provided: javax.inject:javax.inject
+[debug] :: no conflict provided: com.novocode:junit-interface
+[debug] :: no conflict provided: org.eclipse.jetty:jetty-websocket
+[debug] ::: -----------
+[debug] :: optional: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: compile-internal: loop: List()
+[debug] :: sort result: org.eclipse.jetty:jetty-http, com.fasterxml.jackson.core:jackson-annotations, org.fluentlenium:fluentlenium-core, org.slf4j:jcl-over-slf4j, ch.qos.logback:logback-classic, org.apache.httpcomponents:httpmime, commons-logging:commons-logging, com.typesafe.play:play-server_2.11, org.scala-lang:scala-library, org.scalaz.stream:scalaz-stream_2.11, net.sourceforge.cssparser:cssparser, org.reactivemongo:play2-reactivemongo_2.11, org.apache.logging.log4j:log4j-core, xerces:xercesImpl, org.apache.commons:commons-lang3, org.seleniumhq.selenium:selenium-safari-driver, org.apache.logging.log4j:log4j-to-slf4j, org.scalaz:scalaz-effect_2.11, com.typesafe.play:play-json_2.11, org.reactivemongo:reactivemongo_2.11, org.slf4j:jul-to-slf4j, org.specs2:specs2-common_2.11, com.typesafe.play:play-netty-utils, org.scala-lang:scala-compiler, com.typesafe.play:twirl-api_2.11, org.apache.httpcomponents:httpcore, com.typesafe.netty:netty-http-pipelining, com.google.code.findbugs:jsr305, oauth.signpost:signpost-core, com.typesafe.akka:akka-slf4j_2.11, org.scala-lang.modules:scala-parser-combinators_2.11, org.seleniumhq.selenium:selenium-chrome-driver, net.sourceforge.htmlunit:htmlunit-core-js, net.java.dev.jna:jna, com.typesafe.play:play-test_2.11, net.java.dev.jna:platform, org.seleniumhq.selenium:selenium-ie-driver, org.apache.httpcomponents:httpclient, net.sourceforge.nekohtml:nekohtml, org.eclipse.jetty:jetty-io, org.seleniumhq.selenium:selenium-java, org.webbitserver:webbit, com.google.guava:guava, org.seleniumhq.selenium:selenium-api, com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru, joda-time:joda-time, com.google.inject.extensions:guice-assistedinject, org.reactivemongo:reactivemongo-bson-macros_2.11, org.seleniumhq.selenium:selenium-firefox-driver, io.netty:netty, com.typesafe.play:play_2.11, com.typesafe.akka:akka-actor_2.11, org.scala-lang.modules:scala-xml_2.11, org.slf4j:slf4j-api, io.spray:spray-util_2.11, org.eclipse.jetty:jetty-util, org.specs2:specs2-core_2.11, org.scala-lang:scala-reflect, org.seleniumhq.selenium:selenium-remote-driver, com.github.ornicar:scalalib_2.11, org.scodec:scodec-bits_2.11, com.typesafe.play:play-datacommons_2.11, xalan:xalan, org.joda:joda-convert, org.apache.logging.log4j:log4j-api, org.scalaz:scalaz-core_2.11, commons-codec:commons-codec, com.typesafe.play:build-link, org.javassist:javassist, com.google.inject:guice, commons-io:commons-io, io.spray:spray-caching_2.11, org.seleniumhq.selenium:selenium-htmlunit-driver, com.fasterxml.jackson.datatype:jackson-datatype-jsr310, com.fasterxml.jackson.core:jackson-databind, org.scala-stm:scala-stm_2.11, org.w3c.css:sac, com.fasterxml.jackson.datatype:jackson-datatype-jdk8, com.google.code.gson:gson, junit:junit, javax.transaction:jta, org.reactivemongo:reactivemongo-bson_2.11, com.typesafe.play:play-netty-server_2.11, com.typesafe.play:play-exceptions, org.hamcrest:hamcrest-core, com.typesafe.play:play-ws_2.11, aopalliance:aopalliance, net.sourceforge.htmlunit:htmlunit, xml-apis:xml-apis, org.apache.commons:commons-exec, org.specs2:specs2-matcher_2.11, ch.qos.logback:logback-core, org.scala-sbt:test-interface, commons-collections:commons-collections, com.typesafe:config, com.typesafe.play:play-iteratees_2.11, com.fasterxml.jackson.core:jackson-core, com.typesafe.play:play-functional_2.11, org.seleniumhq.selenium:selenium-support, cglib:cglib-nodep, javax.inject:javax.inject, com.novocode:junit-interface, org.scalaz:scalaz-concurrent_2.11, org.eclipse.jetty:jetty-websocket, com.ning:async-http-client, oauth.signpost:signpost-commonshttp4
+[debug] :: no conflict compile-internal: org.eclipse.jetty:jetty-http
+[debug] :: no conflict compile-internal: com.fasterxml.jackson.core:jackson-annotations
+[debug] :: no conflict compile-internal: org.fluentlenium:fluentlenium-core
+[debug] :: no conflict compile-internal: org.slf4j:jcl-over-slf4j
+[debug] :: no conflict compile-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict compile-internal: org.apache.httpcomponents:httpmime
+[debug] :: merging module reports for compile-internal: commons-logging:commons-logging
+[debug] ::: resolving conflict in compile-internal:commons-logging:commons-logging (commons-logging:commons-logging:1.1.1, commons-logging:commons-logging:1.1.3)
+[debug] ::: adds commons-logging:commons-logging:1.1.3
+[debug] ::: evicted commons-logging:commons-logging:1.1.1
+[debug] :: no conflict compile-internal: com.typesafe.play:play-server_2.11
+[debug] :: merging module reports for compile-internal: org.scala-lang:scala-library
+[debug] ::: resolving conflict in compile-internal:org.scala-lang:scala-library (org.scala-lang:scala-library:2.11.8 (), org.scala-lang:scala-library:2.11.7 ())
+[debug] ::: adds org.scala-lang:scala-library:2.11.8 ()
+[debug] ::: evicted org.scala-lang:scala-library:2.11.7 ()
+[debug] :: no conflict compile-internal: org.scalaz.stream:scalaz-stream_2.11
+[debug] :: no conflict compile-internal: net.sourceforge.cssparser:cssparser
+[debug] :: no conflict compile-internal: org.reactivemongo:play2-reactivemongo_2.11
+[debug] :: no conflict compile-internal: org.apache.logging.log4j:log4j-core
+[debug] :: no conflict compile-internal: xerces:xercesImpl
+[debug] :: no conflict compile-internal: org.apache.commons:commons-lang3
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-safari-driver
+[debug] :: no conflict compile-internal: org.apache.logging.log4j:log4j-to-slf4j
+[debug] :: no conflict compile-internal: org.scalaz:scalaz-effect_2.11
+[debug] :: no conflict compile-internal: com.typesafe.play:play-json_2.11
+[debug] :: no conflict compile-internal: org.reactivemongo:reactivemongo_2.11
+[debug] :: no conflict compile-internal: org.slf4j:jul-to-slf4j
+[debug] :: no conflict compile-internal: org.specs2:specs2-common_2.11
+[debug] :: no conflict compile-internal: com.typesafe.play:play-netty-utils
+[debug] :: no conflict compile-internal: org.scala-lang:scala-compiler
+[debug] :: no conflict compile-internal: com.typesafe.play:twirl-api_2.11
+[debug] :: merging module reports for compile-internal: org.apache.httpcomponents:httpcore
+[debug] ::: resolving conflict in compile-internal:org.apache.httpcomponents:httpcore (org.apache.httpcomponents:httpcore:4.0.1, org.apache.httpcomponents:httpcore:4.3.2)
+[debug] ::: adds org.apache.httpcomponents:httpcore:4.3.2
+[debug] ::: evicted org.apache.httpcomponents:httpcore:4.0.1
+[debug] :: no conflict compile-internal: com.typesafe.netty:netty-http-pipelining
+[debug] :: merging module reports for compile-internal: com.google.code.findbugs:jsr305
+[debug] ::: resolving conflict in compile-internal:com.google.code.findbugs:jsr305 (com.google.code.findbugs:jsr305:3.0.1, com.google.code.findbugs:jsr305:2.0.3)
+[debug] ::: adds com.google.code.findbugs:jsr305:3.0.1
+[debug] ::: evicted com.google.code.findbugs:jsr305:2.0.3
+[debug] :: no conflict compile-internal: oauth.signpost:signpost-core
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-slf4j_2.11
+[debug] :: no conflict compile-internal: org.scala-lang.modules:scala-parser-combinators_2.11
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-chrome-driver
+[debug] :: no conflict compile-internal: net.sourceforge.htmlunit:htmlunit-core-js
+[debug] :: no conflict compile-internal: net.java.dev.jna:jna
+[debug] :: no conflict compile-internal: com.typesafe.play:play-test_2.11
+[debug] :: no conflict compile-internal: net.java.dev.jna:platform
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-ie-driver
+[debug] :: merging module reports for compile-internal: org.apache.httpcomponents:httpclient
+[debug] ::: resolving conflict in compile-internal:org.apache.httpcomponents:httpclient (org.apache.httpcomponents:httpclient:4.0.1, org.apache.httpcomponents:httpclient:4.3.4)
+[debug] ::: adds org.apache.httpcomponents:httpclient:4.3.4
+[debug] ::: evicted org.apache.httpcomponents:httpclient:4.0.1
+[debug] :: no conflict compile-internal: net.sourceforge.nekohtml:nekohtml
+[debug] :: no conflict compile-internal: org.eclipse.jetty:jetty-io
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-java
+[debug] :: no conflict compile-internal: org.webbitserver:webbit
+[debug] :: merging module reports for compile-internal: com.google.guava:guava
+[debug] ::: resolving conflict in compile-internal:com.google.guava:guava (com.google.guava:guava:18.0, com.google.guava:guava:19.0)
+[debug] ::: adds com.google.guava:guava:19.0
+[debug] ::: evicted com.google.guava:guava:18.0
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-api
+[debug] :: no conflict compile-internal: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru
+[debug] :: merging module reports for compile-internal: joda-time:joda-time
+[debug] ::: resolving conflict in compile-internal:joda-time:joda-time (joda-time:joda-time:2.9.4, joda-time:joda-time:2.8.1)
+[debug] ::: adds joda-time:joda-time:2.9.4
+[debug] ::: evicted joda-time:joda-time:2.8.1
+[debug] :: no conflict compile-internal: com.google.inject.extensions:guice-assistedinject
+[debug] :: no conflict compile-internal: org.reactivemongo:reactivemongo-bson-macros_2.11
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-firefox-driver
+[debug] :: merging module reports for compile-internal: io.netty:netty
+[debug] ::: resolving conflict in compile-internal:io.netty:netty (io.netty:netty:3.10.1.Final, io.netty:netty:3.10.4.Final)
+[debug] ::: adds io.netty:netty:3.10.4.Final
+[debug] ::: evicted io.netty:netty:3.10.1.Final
+[debug] :: no conflict compile-internal: com.typesafe.play:play_2.11
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-actor_2.11
+[debug] :: merging module reports for compile-internal: org.scala-lang.modules:scala-xml_2.11
+[debug] ::: resolving conflict in compile-internal:org.scala-lang.modules:scala-xml_2.11 (org.scala-lang.modules:scala-xml_2.11:1.0.5, org.scala-lang.modules:scala-xml_2.11:1.0.4)
+[debug] ::: adds org.scala-lang.modules:scala-xml_2.11:1.0.5
+[debug] ::: evicted org.scala-lang.modules:scala-xml_2.11:1.0.4
+[debug] :: no conflict compile-internal: org.slf4j:slf4j-api
+[debug] :: no conflict compile-internal: io.spray:spray-util_2.11
+[debug] :: no conflict compile-internal: org.eclipse.jetty:jetty-util
+[debug] :: no conflict compile-internal: org.specs2:specs2-core_2.11
+[debug] :: merging module reports for compile-internal: org.scala-lang:scala-reflect
+[debug] ::: resolving conflict in compile-internal:org.scala-lang:scala-reflect (org.scala-lang:scala-reflect:2.11.7 (), org.scala-lang:scala-reflect:2.11.6 ())
+[debug] ::: adds org.scala-lang:scala-reflect:2.11.7 ()
+[debug] ::: evicted org.scala-lang:scala-reflect:2.11.6 ()
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-remote-driver
+[debug] :: no conflict compile-internal: com.github.ornicar:scalalib_2.11
+[debug] :: no conflict compile-internal: org.scodec:scodec-bits_2.11
+[debug] :: no conflict compile-internal: com.typesafe.play:play-datacommons_2.11
+[debug] :: no conflict compile-internal: xalan:xalan
+[debug] :: no conflict compile-internal: org.joda:joda-convert
+[debug] :: no conflict compile-internal: org.apache.logging.log4j:log4j-api
+[debug] :: no conflict compile-internal: org.scalaz:scalaz-core_2.11
+[debug] :: no conflict compile-internal: commons-codec:commons-codec
+[debug] :: no conflict compile-internal: com.typesafe.play:build-link
+[debug] :: no conflict compile-internal: org.javassist:javassist
+[debug] :: no conflict compile-internal: com.google.inject:guice
+[debug] :: no conflict compile-internal: commons-io:commons-io
+[debug] :: no conflict compile-internal: io.spray:spray-caching_2.11
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-htmlunit-driver
+[debug] :: no conflict compile-internal: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+[debug] :: no conflict compile-internal: com.fasterxml.jackson.core:jackson-databind
+[debug] :: no conflict compile-internal: org.scala-stm:scala-stm_2.11
+[debug] :: no conflict compile-internal: org.w3c.css:sac
+[debug] :: no conflict compile-internal: com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+[debug] :: no conflict compile-internal: com.google.code.gson:gson
+[debug] :: no conflict compile-internal: junit:junit
+[debug] :: no conflict compile-internal: javax.transaction:jta
+[debug] :: no conflict compile-internal: org.reactivemongo:reactivemongo-bson_2.11
+[debug] :: no conflict compile-internal: com.typesafe.play:play-netty-server_2.11
+[debug] :: no conflict compile-internal: com.typesafe.play:play-exceptions
+[debug] :: no conflict compile-internal: org.hamcrest:hamcrest-core
+[debug] :: no conflict compile-internal: com.typesafe.play:play-ws_2.11
+[debug] :: no conflict compile-internal: aopalliance:aopalliance
+[debug] :: no conflict compile-internal: net.sourceforge.htmlunit:htmlunit
+[debug] :: no conflict compile-internal: xml-apis:xml-apis
+[debug] :: no conflict compile-internal: org.apache.commons:commons-exec
+[debug] :: no conflict compile-internal: org.specs2:specs2-matcher_2.11
+[debug] :: no conflict compile-internal: ch.qos.logback:logback-core
+[debug] :: no conflict compile-internal: org.scala-sbt:test-interface
+[debug] :: no conflict compile-internal: commons-collections:commons-collections
+[debug] :: no conflict compile-internal: com.typesafe:config
+[debug] :: no conflict compile-internal: com.typesafe.play:play-iteratees_2.11
+[debug] :: no conflict compile-internal: com.fasterxml.jackson.core:jackson-core
+[debug] :: no conflict compile-internal: com.typesafe.play:play-functional_2.11
+[debug] :: no conflict compile-internal: org.seleniumhq.selenium:selenium-support
+[debug] :: no conflict compile-internal: cglib:cglib-nodep
+[debug] :: no conflict compile-internal: javax.inject:javax.inject
+[debug] :: no conflict compile-internal: com.novocode:junit-interface
+[debug] :: no conflict compile-internal: org.scalaz:scalaz-concurrent_2.11
+[debug] :: no conflict compile-internal: org.eclipse.jetty:jetty-websocket
+[debug] :: no conflict compile-internal: com.ning:async-http-client
+[debug] :: no conflict compile-internal: oauth.signpost:signpost-commonshttp4
+[debug] ::: -----------
+[debug] :: runtime-internal: loop: List()
+[debug] :: sort result: com.fasterxml.jackson.core:jackson-annotations, org.slf4j:jcl-over-slf4j, ch.qos.logback:logback-classic, org.scala-lang:scala-library, org.scalaz.stream:scalaz-stream_2.11, xerces:xercesImpl, org.apache.commons:commons-lang3, org.scalaz:scalaz-effect_2.11, com.typesafe.play:play-json_2.11, org.slf4j:jul-to-slf4j, org.specs2:specs2-common_2.11, com.typesafe.play:play-netty-utils, com.typesafe.play:twirl-api_2.11, oauth.signpost:signpost-core, com.typesafe.akka:akka-slf4j_2.11, org.scala-lang.modules:scala-parser-combinators_2.11, com.google.code.findbugs:jsr305, com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru, joda-time:joda-time, com.google.guava:guava, com.google.inject.extensions:guice-assistedinject, io.netty:netty, com.typesafe.play:play_2.11, com.typesafe.akka:akka-actor_2.11, org.slf4j:slf4j-api, io.spray:spray-util_2.11, org.specs2:specs2-core_2.11, org.scala-lang.modules:scala-xml_2.11, commons-logging:commons-logging, com.github.ornicar:scalalib_2.11, org.scodec:scodec-bits_2.11, com.typesafe.play:play-datacommons_2.11, org.apache.httpcomponents:httpclient, org.joda:joda-convert, org.scalaz:scalaz-core_2.11, commons-codec:commons-codec, com.typesafe.play:build-link, org.javassist:javassist, com.google.inject:guice, io.spray:spray-caching_2.11, com.fasterxml.jackson.datatype:jackson-datatype-jsr310, com.fasterxml.jackson.core:jackson-databind, org.apache.httpcomponents:httpcore, org.scala-stm:scala-stm_2.11, com.fasterxml.jackson.datatype:jackson-datatype-jdk8, javax.transaction:jta, com.typesafe.play:play-exceptions, com.typesafe.play:play-ws_2.11, aopalliance:aopalliance, xml-apis:xml-apis, org.specs2:specs2-matcher_2.11, ch.qos.logback:logback-core, org.scala-lang:scala-reflect, com.typesafe:config, com.typesafe.play:play-iteratees_2.11, com.fasterxml.jackson.core:jackson-core, com.typesafe.play:play-functional_2.11, javax.inject:javax.inject, org.scalaz:scalaz-concurrent_2.11, com.ning:async-http-client, oauth.signpost:signpost-commonshttp4
+[debug] :: no conflict runtime-internal: com.fasterxml.jackson.core:jackson-annotations
+[debug] :: no conflict runtime-internal: org.slf4j:jcl-over-slf4j
+[debug] :: no conflict runtime-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict runtime-internal: org.scala-lang:scala-library
+[debug] :: no conflict runtime-internal: org.scalaz.stream:scalaz-stream_2.11
+[debug] :: no conflict runtime-internal: xerces:xercesImpl
+[debug] :: no conflict runtime-internal: org.apache.commons:commons-lang3
+[debug] :: no conflict runtime-internal: org.scalaz:scalaz-effect_2.11
+[debug] :: no conflict runtime-internal: com.typesafe.play:play-json_2.11
+[debug] :: no conflict runtime-internal: org.slf4j:jul-to-slf4j
+[debug] :: no conflict runtime-internal: org.specs2:specs2-common_2.11
+[debug] :: no conflict runtime-internal: com.typesafe.play:play-netty-utils
+[debug] :: no conflict runtime-internal: com.typesafe.play:twirl-api_2.11
+[debug] :: no conflict runtime-internal: oauth.signpost:signpost-core
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-slf4j_2.11
+[debug] :: no conflict runtime-internal: org.scala-lang.modules:scala-parser-combinators_2.11
+[debug] :: no conflict runtime-internal: com.google.code.findbugs:jsr305
+[debug] :: no conflict runtime-internal: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru
+[debug] :: no conflict runtime-internal: joda-time:joda-time
+[debug] :: no conflict runtime-internal: com.google.guava:guava
+[debug] :: no conflict runtime-internal: com.google.inject.extensions:guice-assistedinject
+[debug] :: no conflict runtime-internal: io.netty:netty
+[debug] :: no conflict runtime-internal: com.typesafe.play:play_2.11
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-actor_2.11
+[debug] :: no conflict runtime-internal: org.slf4j:slf4j-api
+[debug] :: no conflict runtime-internal: io.spray:spray-util_2.11
+[debug] :: no conflict runtime-internal: org.specs2:specs2-core_2.11
+[debug] :: no conflict runtime-internal: org.scala-lang.modules:scala-xml_2.11
+[debug] :: no conflict runtime-internal: commons-logging:commons-logging
+[debug] :: no conflict runtime-internal: com.github.ornicar:scalalib_2.11
+[debug] :: no conflict runtime-internal: org.scodec:scodec-bits_2.11
+[debug] :: no conflict runtime-internal: com.typesafe.play:play-datacommons_2.11
+[debug] :: no conflict runtime-internal: org.apache.httpcomponents:httpclient
+[debug] :: no conflict runtime-internal: org.joda:joda-convert
+[debug] :: no conflict runtime-internal: org.scalaz:scalaz-core_2.11
+[debug] :: no conflict runtime-internal: commons-codec:commons-codec
+[debug] :: no conflict runtime-internal: com.typesafe.play:build-link
+[debug] :: no conflict runtime-internal: org.javassist:javassist
+[debug] :: no conflict runtime-internal: com.google.inject:guice
+[debug] :: no conflict runtime-internal: io.spray:spray-caching_2.11
+[debug] :: no conflict runtime-internal: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+[debug] :: no conflict runtime-internal: com.fasterxml.jackson.core:jackson-databind
+[debug] :: no conflict runtime-internal: org.apache.httpcomponents:httpcore
+[debug] :: no conflict runtime-internal: org.scala-stm:scala-stm_2.11
+[debug] :: no conflict runtime-internal: com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+[debug] :: no conflict runtime-internal: javax.transaction:jta
+[debug] :: no conflict runtime-internal: com.typesafe.play:play-exceptions
+[debug] :: no conflict runtime-internal: com.typesafe.play:play-ws_2.11
+[debug] :: no conflict runtime-internal: aopalliance:aopalliance
+[debug] :: no conflict runtime-internal: xml-apis:xml-apis
+[debug] :: no conflict runtime-internal: org.specs2:specs2-matcher_2.11
+[debug] :: no conflict runtime-internal: ch.qos.logback:logback-core
+[debug] :: no conflict runtime-internal: org.scala-lang:scala-reflect
+[debug] :: no conflict runtime-internal: com.typesafe:config
+[debug] :: no conflict runtime-internal: com.typesafe.play:play-iteratees_2.11
+[debug] :: no conflict runtime-internal: com.fasterxml.jackson.core:jackson-core
+[debug] :: no conflict runtime-internal: com.typesafe.play:play-functional_2.11
+[debug] :: no conflict runtime-internal: javax.inject:javax.inject
+[debug] :: no conflict runtime-internal: org.scalaz:scalaz-concurrent_2.11
+[debug] :: no conflict runtime-internal: com.ning:async-http-client
+[debug] :: no conflict runtime-internal: oauth.signpost:signpost-commonshttp4
+[debug] ::: -----------
+[debug] :: test-internal: loop: List()
+[debug] :: sort result: org.eclipse.jetty:jetty-http, com.fasterxml.jackson.core:jackson-annotations, org.fluentlenium:fluentlenium-core, org.slf4j:jcl-over-slf4j, ch.qos.logback:logback-classic, org.apache.httpcomponents:httpmime, commons-logging:commons-logging, com.typesafe.play:play-server_2.11, org.scala-lang:scala-library, org.scalaz.stream:scalaz-stream_2.11, net.sourceforge.cssparser:cssparser, org.reactivemongo:play2-reactivemongo_2.11, org.apache.logging.log4j:log4j-core, xerces:xercesImpl, org.apache.commons:commons-lang3, org.seleniumhq.selenium:selenium-safari-driver, org.apache.logging.log4j:log4j-to-slf4j, org.scalaz:scalaz-effect_2.11, com.typesafe.play:play-json_2.11, org.reactivemongo:reactivemongo_2.11, org.slf4j:jul-to-slf4j, org.specs2:specs2-common_2.11, com.typesafe.play:play-netty-utils, org.scala-lang:scala-compiler, com.typesafe.play:twirl-api_2.11, org.apache.httpcomponents:httpcore, com.typesafe.netty:netty-http-pipelining, com.google.code.findbugs:jsr305, oauth.signpost:signpost-core, com.typesafe.akka:akka-slf4j_2.11, org.scala-lang.modules:scala-parser-combinators_2.11, org.seleniumhq.selenium:selenium-chrome-driver, net.sourceforge.htmlunit:htmlunit-core-js, net.java.dev.jna:jna, com.typesafe.play:play-test_2.11, net.java.dev.jna:platform, org.seleniumhq.selenium:selenium-ie-driver, org.apache.httpcomponents:httpclient, net.sourceforge.nekohtml:nekohtml, org.eclipse.jetty:jetty-io, org.seleniumhq.selenium:selenium-java, org.webbitserver:webbit, com.google.guava:guava, org.seleniumhq.selenium:selenium-api, com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru, joda-time:joda-time, com.google.inject.extensions:guice-assistedinject, org.reactivemongo:reactivemongo-bson-macros_2.11, org.seleniumhq.selenium:selenium-firefox-driver, io.netty:netty, com.typesafe.play:play_2.11, com.typesafe.akka:akka-actor_2.11, org.scala-lang.modules:scala-xml_2.11, org.slf4j:slf4j-api, io.spray:spray-util_2.11, org.eclipse.jetty:jetty-util, org.specs2:specs2-core_2.11, org.scala-lang:scala-reflect, org.seleniumhq.selenium:selenium-remote-driver, com.github.ornicar:scalalib_2.11, org.scodec:scodec-bits_2.11, com.typesafe.play:play-datacommons_2.11, xalan:xalan, org.joda:joda-convert, org.apache.logging.log4j:log4j-api, org.scalaz:scalaz-core_2.11, commons-codec:commons-codec, com.typesafe.play:build-link, org.javassist:javassist, com.google.inject:guice, commons-io:commons-io, io.spray:spray-caching_2.11, org.seleniumhq.selenium:selenium-htmlunit-driver, com.fasterxml.jackson.datatype:jackson-datatype-jsr310, com.fasterxml.jackson.core:jackson-databind, org.scala-stm:scala-stm_2.11, org.w3c.css:sac, com.fasterxml.jackson.datatype:jackson-datatype-jdk8, com.google.code.gson:gson, junit:junit, javax.transaction:jta, org.reactivemongo:reactivemongo-bson_2.11, com.typesafe.play:play-netty-server_2.11, com.typesafe.play:play-exceptions, org.hamcrest:hamcrest-core, com.typesafe.play:play-ws_2.11, aopalliance:aopalliance, net.sourceforge.htmlunit:htmlunit, xml-apis:xml-apis, org.apache.commons:commons-exec, org.specs2:specs2-matcher_2.11, ch.qos.logback:logback-core, org.scala-sbt:test-interface, commons-collections:commons-collections, com.typesafe:config, com.typesafe.play:play-iteratees_2.11, com.fasterxml.jackson.core:jackson-core, com.typesafe.play:play-functional_2.11, org.seleniumhq.selenium:selenium-support, cglib:cglib-nodep, javax.inject:javax.inject, com.novocode:junit-interface, org.scalaz:scalaz-concurrent_2.11, org.eclipse.jetty:jetty-websocket, com.ning:async-http-client, oauth.signpost:signpost-commonshttp4
+[debug] :: no conflict test-internal: org.eclipse.jetty:jetty-http
+[debug] :: no conflict test-internal: com.fasterxml.jackson.core:jackson-annotations
+[debug] :: no conflict test-internal: org.fluentlenium:fluentlenium-core
+[debug] :: no conflict test-internal: org.slf4j:jcl-over-slf4j
+[debug] :: no conflict test-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict test-internal: org.apache.httpcomponents:httpmime
+[debug] :: merging module reports for test-internal: commons-logging:commons-logging
+[debug] ::: resolving conflict in test-internal:commons-logging:commons-logging (commons-logging:commons-logging:1.1.1, commons-logging:commons-logging:1.1.3)
+[debug] ::: adds commons-logging:commons-logging:1.1.3
+[debug] ::: evicted commons-logging:commons-logging:1.1.1
+[debug] :: no conflict test-internal: com.typesafe.play:play-server_2.11
+[debug] :: merging module reports for test-internal: org.scala-lang:scala-library
+[debug] ::: resolving conflict in test-internal:org.scala-lang:scala-library (org.scala-lang:scala-library:2.11.8 (), org.scala-lang:scala-library:2.11.7 ())
+[debug] ::: adds org.scala-lang:scala-library:2.11.8 ()
+[debug] ::: evicted org.scala-lang:scala-library:2.11.7 ()
+[debug] :: no conflict test-internal: org.scalaz.stream:scalaz-stream_2.11
+[debug] :: no conflict test-internal: net.sourceforge.cssparser:cssparser
+[debug] :: no conflict test-internal: org.reactivemongo:play2-reactivemongo_2.11
+[debug] :: no conflict test-internal: org.apache.logging.log4j:log4j-core
+[debug] :: no conflict test-internal: xerces:xercesImpl
+[debug] :: no conflict test-internal: org.apache.commons:commons-lang3
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-safari-driver
+[debug] :: no conflict test-internal: org.apache.logging.log4j:log4j-to-slf4j
+[debug] :: no conflict test-internal: org.scalaz:scalaz-effect_2.11
+[debug] :: no conflict test-internal: com.typesafe.play:play-json_2.11
+[debug] :: no conflict test-internal: org.reactivemongo:reactivemongo_2.11
+[debug] :: no conflict test-internal: org.slf4j:jul-to-slf4j
+[debug] :: no conflict test-internal: org.specs2:specs2-common_2.11
+[debug] :: no conflict test-internal: com.typesafe.play:play-netty-utils
+[debug] :: no conflict test-internal: org.scala-lang:scala-compiler
+[debug] :: no conflict test-internal: com.typesafe.play:twirl-api_2.11
+[debug] :: merging module reports for test-internal: org.apache.httpcomponents:httpcore
+[debug] ::: resolving conflict in test-internal:org.apache.httpcomponents:httpcore (org.apache.httpcomponents:httpcore:4.0.1, org.apache.httpcomponents:httpcore:4.3.2)
+[debug] ::: adds org.apache.httpcomponents:httpcore:4.3.2
+[debug] ::: evicted org.apache.httpcomponents:httpcore:4.0.1
+[debug] :: no conflict test-internal: com.typesafe.netty:netty-http-pipelining
+[debug] :: merging module reports for test-internal: com.google.code.findbugs:jsr305
+[debug] ::: resolving conflict in test-internal:com.google.code.findbugs:jsr305 (com.google.code.findbugs:jsr305:3.0.1, com.google.code.findbugs:jsr305:2.0.3)
+[debug] ::: adds com.google.code.findbugs:jsr305:3.0.1
+[debug] ::: evicted com.google.code.findbugs:jsr305:2.0.3
+[debug] :: no conflict test-internal: oauth.signpost:signpost-core
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-slf4j_2.11
+[debug] :: no conflict test-internal: org.scala-lang.modules:scala-parser-combinators_2.11
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-chrome-driver
+[debug] :: no conflict test-internal: net.sourceforge.htmlunit:htmlunit-core-js
+[debug] :: no conflict test-internal: net.java.dev.jna:jna
+[debug] :: no conflict test-internal: com.typesafe.play:play-test_2.11
+[debug] :: no conflict test-internal: net.java.dev.jna:platform
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-ie-driver
+[debug] :: merging module reports for test-internal: org.apache.httpcomponents:httpclient
+[debug] ::: resolving conflict in test-internal:org.apache.httpcomponents:httpclient (org.apache.httpcomponents:httpclient:4.0.1, org.apache.httpcomponents:httpclient:4.3.4)
+[debug] ::: adds org.apache.httpcomponents:httpclient:4.3.4
+[debug] ::: evicted org.apache.httpcomponents:httpclient:4.0.1
+[debug] :: no conflict test-internal: net.sourceforge.nekohtml:nekohtml
+[debug] :: no conflict test-internal: org.eclipse.jetty:jetty-io
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-java
+[debug] :: no conflict test-internal: org.webbitserver:webbit
+[debug] :: merging module reports for test-internal: com.google.guava:guava
+[debug] ::: resolving conflict in test-internal:com.google.guava:guava (com.google.guava:guava:18.0, com.google.guava:guava:19.0)
+[debug] ::: adds com.google.guava:guava:19.0
+[debug] ::: evicted com.google.guava:guava:18.0
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-api
+[debug] :: no conflict test-internal: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru
+[debug] :: merging module reports for test-internal: joda-time:joda-time
+[debug] ::: resolving conflict in test-internal:joda-time:joda-time (joda-time:joda-time:2.9.4, joda-time:joda-time:2.8.1)
+[debug] ::: adds joda-time:joda-time:2.9.4
+[debug] ::: evicted joda-time:joda-time:2.8.1
+[debug] :: no conflict test-internal: com.google.inject.extensions:guice-assistedinject
+[debug] :: no conflict test-internal: org.reactivemongo:reactivemongo-bson-macros_2.11
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-firefox-driver
+[debug] :: merging module reports for test-internal: io.netty:netty
+[debug] ::: resolving conflict in test-internal:io.netty:netty (io.netty:netty:3.10.1.Final, io.netty:netty:3.10.4.Final)
+[debug] ::: adds io.netty:netty:3.10.4.Final
+[debug] ::: evicted io.netty:netty:3.10.1.Final
+[debug] :: no conflict test-internal: com.typesafe.play:play_2.11
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-actor_2.11
+[debug] :: merging module reports for test-internal: org.scala-lang.modules:scala-xml_2.11
+[debug] ::: resolving conflict in test-internal:org.scala-lang.modules:scala-xml_2.11 (org.scala-lang.modules:scala-xml_2.11:1.0.5, org.scala-lang.modules:scala-xml_2.11:1.0.4)
+[debug] ::: adds org.scala-lang.modules:scala-xml_2.11:1.0.5
+[debug] ::: evicted org.scala-lang.modules:scala-xml_2.11:1.0.4
+[debug] :: no conflict test-internal: org.slf4j:slf4j-api
+[debug] :: no conflict test-internal: io.spray:spray-util_2.11
+[debug] :: no conflict test-internal: org.eclipse.jetty:jetty-util
+[debug] :: no conflict test-internal: org.specs2:specs2-core_2.11
+[debug] :: merging module reports for test-internal: org.scala-lang:scala-reflect
+[debug] ::: resolving conflict in test-internal:org.scala-lang:scala-reflect (org.scala-lang:scala-reflect:2.11.7 (), org.scala-lang:scala-reflect:2.11.6 ())
+[debug] ::: adds org.scala-lang:scala-reflect:2.11.7 ()
+[debug] ::: evicted org.scala-lang:scala-reflect:2.11.6 ()
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-remote-driver
+[debug] :: no conflict test-internal: com.github.ornicar:scalalib_2.11
+[debug] :: no conflict test-internal: org.scodec:scodec-bits_2.11
+[debug] :: no conflict test-internal: com.typesafe.play:play-datacommons_2.11
+[debug] :: no conflict test-internal: xalan:xalan
+[debug] :: no conflict test-internal: org.joda:joda-convert
+[debug] :: no conflict test-internal: org.apache.logging.log4j:log4j-api
+[debug] :: no conflict test-internal: org.scalaz:scalaz-core_2.11
+[debug] :: no conflict test-internal: commons-codec:commons-codec
+[debug] :: no conflict test-internal: com.typesafe.play:build-link
+[debug] :: no conflict test-internal: org.javassist:javassist
+[debug] :: no conflict test-internal: com.google.inject:guice
+[debug] :: no conflict test-internal: commons-io:commons-io
+[debug] :: no conflict test-internal: io.spray:spray-caching_2.11
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-htmlunit-driver
+[debug] :: no conflict test-internal: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
+[debug] :: no conflict test-internal: com.fasterxml.jackson.core:jackson-databind
+[debug] :: no conflict test-internal: org.scala-stm:scala-stm_2.11
+[debug] :: no conflict test-internal: org.w3c.css:sac
+[debug] :: no conflict test-internal: com.fasterxml.jackson.datatype:jackson-datatype-jdk8
+[debug] :: no conflict test-internal: com.google.code.gson:gson
+[debug] :: no conflict test-internal: junit:junit
+[debug] :: no conflict test-internal: javax.transaction:jta
+[debug] :: no conflict test-internal: org.reactivemongo:reactivemongo-bson_2.11
+[debug] :: no conflict test-internal: com.typesafe.play:play-netty-server_2.11
+[debug] :: no conflict test-internal: com.typesafe.play:play-exceptions
+[debug] :: no conflict test-internal: org.hamcrest:hamcrest-core
+[debug] :: no conflict test-internal: com.typesafe.play:play-ws_2.11
+[debug] :: no conflict test-internal: aopalliance:aopalliance
+[debug] :: no conflict test-internal: net.sourceforge.htmlunit:htmlunit
+[debug] :: no conflict test-internal: xml-apis:xml-apis
+[debug] :: no conflict test-internal: org.apache.commons:commons-exec
+[debug] :: no conflict test-internal: org.specs2:specs2-matcher_2.11
+[debug] :: no conflict test-internal: ch.qos.logback:logback-core
+[debug] :: no conflict test-internal: org.scala-sbt:test-interface
+[debug] :: no conflict test-internal: commons-collections:commons-collections
+[debug] :: no conflict test-internal: com.typesafe:config
+[debug] :: no conflict test-internal: com.typesafe.play:play-iteratees_2.11
+[debug] :: no conflict test-internal: com.fasterxml.jackson.core:jackson-core
+[debug] :: no conflict test-internal: com.typesafe.play:play-functional_2.11
+[debug] :: no conflict test-internal: org.seleniumhq.selenium:selenium-support
+[debug] :: no conflict test-internal: cglib:cglib-nodep
+[debug] :: no conflict test-internal: javax.inject:javax.inject
+[debug] :: no conflict test-internal: com.novocode:junit-interface
+[debug] :: no conflict test-internal: org.scalaz:scalaz-concurrent_2.11
+[debug] :: no conflict test-internal: org.eclipse.jetty:jetty-websocket
+[debug] :: no conflict test-internal: com.ning:async-http-client
+[debug] :: no conflict test-internal: oauth.signpost:signpost-commonshttp4
+[debug] ::: -----------
+[debug] :: plugin: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: sources: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: docs: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: pom: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: scala-tool: loop: List()
+[debug] :: sort result: org.scala-lang:scala-library, org.scala-lang.modules:scala-parser-combinators_2.11, org.scala-lang:scala-compiler, org.scala-lang.modules:scala-xml_2.11, jline:jline, org.scala-lang:scala-reflect
+[debug] :: no conflict scala-tool: org.scala-lang:scala-library
+[debug] :: no conflict scala-tool: org.scala-lang.modules:scala-parser-combinators_2.11
+[debug] :: no conflict scala-tool: org.scala-lang:scala-compiler
+[debug] :: no conflict scala-tool: org.scala-lang.modules:scala-xml_2.11
+[debug] :: no conflict scala-tool: jline:jline
+[debug] :: no conflict scala-tool: org.scala-lang:scala-reflect

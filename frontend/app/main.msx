@@ -1,0 +1,20 @@
+"use strict";
+
+
+m.route.mode = "pathname";
+
+//window.Nav = require('./_nav.msx');
+window.Main = require('./_main.msx');
+//window.Footer = require('./_footer.msx');
+
+
+
+//re-route to dashboard
+//m.route("/dashboard"); // logs "unloading home component"
+
+
+
+
+
+
+

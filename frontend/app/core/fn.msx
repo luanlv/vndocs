@@ -1,0 +1,197 @@
+var fn = fn || {};
+
+fn.checkMenu = function(link){
+    var partRoute = m.route().split('/');
+    var result = true;
+    var partLink = link.replace('https://', '').replace('http://', '').split('/');
+    if(!(partLink[1] === "c" || partLink[1] === "p")){
+        return false;
+    }
+    for(var i = 2; i < partLink.length; i++){
+        if(partLink[i] != partRoute[i]){
+            result = false;
+        }
+    }
+    return result;
+};
+fn.price = function(price){
+    var priceString = price.toString();
+    var priceArray = priceString.split( /(?=(?:...)*$)/ );
+    return priceArray.join(',');
+};
+
+fn.cache = undefined;
+fn.url = m.route()
+
+fn.createMenu = function(menuJson, level){
+    return m('ul.level' + level, [
+        menuJson.map(function(child){
+            return m('li' + ((child.children != undefined)?'.has-sub':'.no-sub') + (fn.checkMenu(child.http)?'.active':'') +  ((fn.checkMenu(child.http) || (level === 1))?'.open':'') + (( level === 1 )?'.topMenu':''),  [
+                m('.link-menu-wr', [
+                    m('span', {
+                        onclick: function(event){
+                            var el = event.target.parentNode.parentNode;
+
+                            var flag = el.classList.contains('open');
+
+                            var listContainer = document.querySelectorAll('.level2 .open');
+
+                            for(var i = 0; i < listContainer.length; i++){
+                                listContainer[i].classList.remove('open')
+                            }
+
+                            if (el.classList) {
+                                if(!el.classList.contains('open') && !flag) {
+                                    el.classList.add('open');
+                                }
+                            } else {
+                                var classes = el.className.split(' ');
+                                var existingIndex = classes.indexOf('open');
+
+                                if (existingIndex >= 0)
+                                    classes.splice(existingIndex, 1);
+                                else
+                                    classes.push('open');
+                                el.className = classes.join(' ');
+                            }
+                        }
+                    } ,''),
+                    m('a', {href: child.http, config: m.route} ,m('span', child.title))
+                ]),
+                (child.children != undefined)?fn.createMenu(child.children, level + 1):''
+            ])
+        })
+    ])
+};
+
+fn.runCreateMenu = function(menuJson, level){
+    if(fn.url !== m.route()){
+        fn.url = m.route();
+        fn.cache = undefined;
+    };
+    if(fn.cache !== undefined){
+        return fn.cache;
+    } else {
+        fn.cache = fn.createMenu(menuJson, level)
+        return fn.cache;
+    }
+};
+
+fn.preloadImages = function(srcArray) {
+    for (var i = 0, len = srcArray.length; i < len; i++) {
+        var img = new Image();
+        img.src = srcArray[i];
+        img.style.display = 'none';
+        document.body.appendChild(img);
+    }
+};
+
+
+
+fn.buildBreadcrumb = function(urls, category, currentCategory, result){
+    if(currentCategory === "NONE") {
+        result.push(<div><a href="/" config={m.route}>Trang chủ</a> / </div>);
+        return result;
+    }
+    var jsonCategory = category.getItemByParam({slug: currentCategory});
+    result.push(<div><a href={window.urls[currentCategory]} config={m.route}> {jsonCategory.name} </a>  / </div>);
+    return fn.buildBreadcrumb(urls, category, jsonCategory.sku.slug, result);
+};
+
+fn.requestWithFeedback = function(args, bind, fn) {
+    var data = m.prop();
+    var completed = m.prop(false);
+    var complete = function() {
+        completed(true)
+    };
+    args.background = true;
+    args.config = function(xhr) {
+        xhr.timeout = 4000;
+        xhr.ontimeout = function() {
+            complete();
+            m.redraw();
+        }
+    };
+    return {
+        request: m.request(args).then(data).then(function(data){
+            if(bind !== undefined) bind(data);
+            if(fn !== undefined) fn();
+            complete();
+            m.redraw();
+        }),
+        data: data,
+        ready: completed
+    }
+};
+
+fn.changePage = function(currPage, newPage, maxPage){
+    var url = m.route();
+    console.log(url)
+    var newUrl;
+    var currParam = m.route.param('_page');
+    if(url.indexOf('?') < 0){
+        url += '?';
+    }
+
+    if(currParam === undefined){
+        newUrl = url + '&_page=' + newPage;
+    } else {
+        var oldParam = '_page=' + currParam;
+        var newParam = '_page=' + newPage;
+        newUrl = url.toString().replace(oldParam, newParam);
+    }
+
+    console.log(newUrl)
+    m.route(newUrl);
+}
+
+fn.buildPageNav = function(currPage, maxPage){
+  return (
+    <div className="pageNav clearfix">
+          <div className="pagePrev bo bo-3"
+            onclick={
+            function(){
+                if(currPage() > 1){
+                    fn.changePage(currPage(), currPage() - 1, maxPage)
+                }
+            }
+            }
+          >{"<<"}</div>
+          <input className="currpage bo-5"
+                 onchange = {m.withAttr("value", currPage)}
+                 config={
+                    function(el, isInited){
+                        if(!isInited){
+                            el.value = currPage()
+                        }
+                    }
+                 }
+                 onkeydown={
+                    function(){
+                        if (event.keyCode == 13) {
+                            if(event.target.value > maxPage || event.target.value < 1 || event.target.value === currPage()){
+                               event.target.value = currPage()
+                            } else {
+                                fn.changePage(currPage, event.target.value, maxPage)
+                            }
+                        }
+                    }
+                 }
+          />
+           <div>/</div>
+          <div className="currPage" >{maxPage}</div>
+          <div className="pageNext bo bo-3"
+            onclick={
+            function(){
+                    if(currPage() < maxPage){
+                        fn.changePage(currPage, currPage() + 1, maxPage)
+                    }
+                }
+            }
+          >{">>"}</div>
+    </div>
+  )
+};
+
+
+module.exports = fn;

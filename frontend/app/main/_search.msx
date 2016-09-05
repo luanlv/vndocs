@@ -1,0 +1,73 @@
+var Nav = require('./_nav.msx');
+var Footer = require('./_footer.msx');
+var Left = require('./partials/_left.msx');
+var Middle = require('./partials/_middle-search.msx');
+var Right = require('./partials/_right.msx');
+var fn = require('../core/fn.msx');
+
+var Search = {
+    controller: function() {
+        m.redraw.strategy("diff")
+        var ctrl = this;
+        if(window._kw !== undefined ) {
+            ctrl._kw = window._kw;
+        } else {
+            ctrl._kw = ""
+        }
+        //ctrl.slides = m.prop(window.demoSlide);
+        ctrl.currentSlide = m.prop({});
+        ctrl.products = m.prop([]);
+        //ctrl.currPage = m.prop(1);
+        ctrl.total = m.prop(0);
+        ctrl.maxPage = m.prop(0);
+        ctrl.slides = m.prop([]);
+        ctrl.current = 0;
+
+        //ctrl.currentSlide(window.demoSlide[0]);
+
+        ctrl.loading = true;
+        ctrl.ok = false;
+        ctrl.setup = function(){
+            ctrl.products(ctrl.request.data().products);
+            ctrl.total(ctrl.request.data().total);
+            ctrl.currPage = m.prop(ctrl.request.data().page);
+            ctrl.maxPage(ctrl.request.data().totalPage);
+            ctrl.slides(ctrl.request.data().products.slice(2, 6));
+            ctrl.currentSlide(ctrl.slides()[0]);
+            ctrl.maxSlide = ctrl.slides().length;
+        };
+
+        if(window.demoSlide === undefined || window.demoSlide.length == 0) {
+            ctrl.request = fn.requestWithFeedback({method: "GET", url: "/api/search?_kw=" + m.route.param('_kw') + "&" + ((m.route.param('_page') !== undefined)?("_page=" + m.route.param("_page")):"")}, ctrl.products, ctrl.setup);
+        } else {
+            ctrl.request = {
+                ready: function () {
+                    return true
+                },
+                data: m.prop(window.demoSlide)
+            };
+            ctrl.setup()
+        }
+        window.demoSlide = [];
+        //console.log(window.demoSlide.length)
+        //ctrl.data = m.prop([]);
+        //m.request({method: "GET", url: "/data1.json"}).then(function(res){
+        //  ctrl.data(res.data)
+        //});
+    },
+    view: function(ctrl) {
+        return m('div', [
+            Nav.view(ctrl),
+            <div id="main" className="clearfix">
+                {[
+                    Left(ctrl),
+                    Middle(ctrl),
+                ]}
+            </div>,
+            Footer.view(ctrl)
+        ])
+    }
+};
+
+
+module.exports = Search;

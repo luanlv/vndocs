@@ -1,0 +1,127 @@
+@import play.api.libs.json.JsArray
+@import play.api.libs.json.JsNull
+@(listMenu: JsArray)(implicit ctx: Context)
+@import play.api.libs.json.Json
+
+@moreCss = {
+	@cssTag("admin/domenu.css")
+}
+
+@moreJs = {
+	@jsTag("admin/jquery.domenu-0.48.53.js")
+	<script >
+		$(document).ready(function()
+    {
+
+        $(document).on('click', '#update', function(){
+					var json = domenu.toJson();
+          var request = $.ajax({
+		        type: "POST",
+		        url: "",
+		        data: json,
+		        contentType: "application/json; charset=utf-8",
+		        dataType: "text"
+          });
+          request.done(function( msg ) {
+            alert( msg );
+          }).then(function(){
+            location.reload();
+          });
+          request.fail(function( jqXHR, textStatus ) {
+					  alert( "Request failed: " + textStatus );
+					});
+        });
+
+				$(document).on('click', '#preview', function(){
+					var json = $('#domenu').domenu({onToJson: function(e){console.log(e)}}).toJson();
+          var request = $.ajax({
+		        type: "POST",
+		        url: "?preview=true",
+		        data: json,
+		        contentType: "application/json; charset=utf-8",
+		        dataType: "html"
+          });
+          request.done(function( html ) {
+            $('#view').html(html)
+          });
+          request.fail(function( jqXHR, textStatus ) {
+					  alert( "Request failed: " + textStatus );
+					});
+        });
+
+        var updateOutput = function(e)
+        {
+            var list   = e.length ? e : $(e.target),
+                output = list.data('output');
+            console.log(output);
+            if (window.JSON) {
+                output.val(window.JSON.stringify(list.domenu('serialize')));//, null, 2));
+            } else {
+                output.val('JSON browser support required for this demo.');
+            }
+
+        };
+
+        var domenu = $('#domenu').domenu({
+            onDomenuInitialized: [function() {
+                console.log('event: onDomenuInitialized', 'arguments:', arguments, 'context:', this);
+            }],
+	            data: '@Html(Json.stringify(Json.toJson(listMenu)))'
+        }).parseJson()
+
+    });
+	</script>
+}
+
+@admin.layout("Admin | Create Menu", moreCss, moreJs){
+
+	<div class="row">
+		<div class="box box-primary">
+			<div class="box-body">
+				<div class="dd" id="domenu">
+
+					<button id="domenu-add-item-btn" class="dd-new-item">+</button>
+						<!-- .dd-item-blueprint is a template for all .dd-item's -->
+					<li class="dd-item-blueprint">
+						<div class="dd-handle dd3-handle">Drag</div>
+						<div class="dd3-content">
+							<span>[item_name]</span>
+							<div class="button-container">
+								<button class="item-add">+</button>
+								<button class="item-remove" data-confirm-class="item-remove-confirm">&times;</button>
+							</div>
+							<div class="dd-edit-box" style="display: none;">
+									<!-- data-placeholder has a higher priority than placeholder -->
+									<!-- data-placeholder can use token-values; when not present will be set to "" -->
+									<!-- data-default-value specifies a default value for the input; when not present will be set to "" -->
+								<input type="text" name="title" id="title" autocomplete="off" placeholder="Item" data-placeholder="Any nice idea for the title?" data-default-value="List Item. {?numeric.increment}">
+								<input type="text" name="http" id="http" placeholder="" data-placeholder="Link" data-default-value="/{?numeric.increment}/{?numeric.increment}">
+								@*<select name="superselect">*@
+									@*<option>select something...</option>*@
+									@*<optgroup label="Pages">*@
+										@*<option value="1">http://example.com/page/1</option>*@
+										@*<option value="2">http://example.com/page/2</option>*@
+									@*</optgroup>*@
+									@*<optgroup label="Categories">*@
+										@*<option value="3">News</option>*@
+										@*<option value="4">Stories</option>*@
+									@*</optgroup>*@
+								@*</select>*@
+								<i class="end-edit">&#x270e;</i>
+							</div>
+						</div>
+					</li>
+
+					<ol class="dd-list"></ol>
+				</div>
+
+
+				<button id="update">Update</button>
+				<button id="preview">PreView</button>
+			</div>
+		</div>
+
+	<div id="view"></div>
+	</div>
+
+}

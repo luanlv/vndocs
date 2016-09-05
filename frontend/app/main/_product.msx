@@ -1,0 +1,51 @@
+var Nav = require('./_nav.msx');
+var Footer = require('./_footer.msx');
+var Left = require('./partials/_left.msx');
+var Middle = require('./partials/_middle-product.msx');
+var Right = require('./partials/_right.msx');
+var fn = require('../core/fn.msx');
+
+var Product = {
+    controller: function() {
+        m.redraw.strategy("diff")
+        var ctrl = this;
+        if(window._kw !== undefined ) {
+            ctrl._kw = window._kw;
+        } else {
+            ctrl._kw = ""
+        }
+        ctrl.product = m.prop({status: "loading"});
+        ctrl.zoom = false;
+        ctrl.setup = function(){
+            ctrl.product(ctrl.request.data())
+        };
+        if(window.product === undefined || window.product.length == 0) {
+            ctrl.request = fn.requestWithFeedback({method: "GET", url: "/api/getProduct/" + m.route.param('item')}, ctrl.product, ctrl.setup);
+        } else {
+            ctrl.request = {
+                ready: function () {
+                    return true
+                },
+                data: m.prop(window.product)
+            };
+            ctrl.setup();
+        }
+        window.product = [];
+
+    },
+    view: function(ctrl) {
+        return m('div', [
+            Nav.view(ctrl),
+            <div id="main" className="clearfix">
+                {[
+                    Left(ctrl),
+                    Middle(ctrl),
+                ]}
+            </div>,
+            Footer.view(ctrl)
+        ])
+    }
+};
+
+
+module.exports = Product;

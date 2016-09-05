@@ -1,0 +1,9 @@
+@(label: String , field: Field, list: List[String], zero: Boolean = false)(implicit ctx: Context)
+
+<div class="form-group">
+	<label for="@field.id">@label</label>
+	<select name="@field.name" id="@field.id" class="form-control">
+		@if(zero){ <option value="">Select</option> }
+		@for(item <- list){<option value="@item" @if(field.value == Option(item)){ selected }>@item</option>}
+	</select>
+</div>

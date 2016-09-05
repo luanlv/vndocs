@@ -1,0 +1,10 @@
+
+var Main = Main || {};
+
+Main.Home = require('./main/_home.msx');
+//Main.Dashboard = require('./main/_dashboard.msx');
+Main.Product = require('./main/_product.msx');
+Main.Category = require('./main/_category.msx');
+Main.Search = require('./main/_search.msx');
+
+module.exports = Main;

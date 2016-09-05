@@ -1,0 +1,19 @@
+2016-09-05 16:26:15,050 [INFO] from play.core.server.NettyServer in pool-8-thread-2 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-09-05 16:33:54,677 [akka.event.slf4j.Slf4jLogger INFO] Slf4jLogger started
+2016-09-05 16:33:54,902 [lila INFO] [boot] app
+2016-09-05 16:33:54,930 [lila INFO] [boot] api
+2016-09-05 16:33:54,940 [lila INFO] [boot] product
+2016-09-05 16:33:54,944 [lila INFO] [boot] db
+2016-09-05 16:33:54,963 [lila INFO] [boot] hub
+2016-09-05 16:33:54,963 [lila INFO] [boot] memo
+2016-09-05 16:33:54,990 [lila INFO] [boot] user
+2016-09-05 16:33:55,042 [reactivemongo.api.MongoDriver WARN] No mongo-async-driver configuration found
+2016-09-05 16:33:55,131 [lila INFO] ReactiveMongoApi successfully started with DB 'shopluulinh'! Servers:
+		[127.0.0.1:27017]
+2016-09-05 16:33:55,481 [lila INFO] [cron] schedule refresh online user ids every 3 seconds
+2016-09-05 16:33:55,498 [lila INFO] [boot] security
+2016-09-05 16:33:55,519 [reactivemongo.core.actors.MongoDBSystem INFO] The node set is now available
+2016-09-05 16:33:55,529 [reactivemongo.core.actors.MongoDBSystem INFO] The primary is now available
+2016-09-05 16:33:55,557 [lila INFO] [boot] product
+2016-09-05 16:33:55,579 [play.api.Play INFO] Application started (Dev)
+2016-09-05 16:33:57,323 [lila INFO] [boot] i18n

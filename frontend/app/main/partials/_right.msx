@@ -1,0 +1,49 @@
+var fn = require('../../core/fn.msx');
+
+var Right = function(ctrl){
+    return (
+        <div className="right">
+            <div className="notify">
+                <div className="notify-header">
+                    THÔNG BÁO
+                </div>
+                <div className="notify-body">
+                    - Ship nội thành: 10,000Đ -
+                    <br/>
+                    <br/>
+                    Miễn phí tiền ship với đơn hàng trên 200,000Đ (HN), trên 500,000Đ (TQ)
+                </div>
+            </div>
+            <div className="saleWr ">
+                <h3>SẢN PHẨM KHUYẾN MÃI</h3>
+                {(ctrl.products().length<1)?(
+                    ""
+                ):(
+                    <div className="listSale">
+                        {ctrl.products().map(function(item){
+                            return (
+                                <div className="saleWr clearfix">
+                                    <div className="sale-info">
+                                        <div className="sale-name">{item.core.name}</div>
+                                        <div className="sale-price">
+                                            {fn.price((item.extra.saleOff2>0)?(item.core.price[0].price -item.extra.saleOff2):(
+                                                (100 - item.extra.saleOff1)* (item.core.price[0].price) /100
+                                            ))} Đ
+                                        </div>
+                                        <div className="old-price">{ fn.price(item.core.price[0].price) } Đ</div>
+                                    </div>
+                                    <div className="sale-img">
+                                        <img src={item.info.image[0].thumb} alt=""/>
+                                    </div>
+                                </div>
+
+                            )
+                        })}
+                    </div>
+                )}
+            </div>
+        </div>
+    )
+};
+
+module.exports = Right;

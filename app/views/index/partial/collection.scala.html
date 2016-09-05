@@ -1,0 +1,84 @@
+@(title: String, products: List[lila.product.Product], _sb: String = "", _v: String = "", _kw: String = "", _li: Int = 12, subTypeUrl: String = "", groupUrl: String = "")
+
+<div class="menuCol">
+	@if(_kw != ""){<h3 class="_kw">Từ khóa: "<span>@_kw</span>"</h3>}
+	<h2 class="ribbon" >
+		@title
+	</h2>
+</div>
+
+<ul class="gallery">
+	@for(product <- products){
+		<li  class="sresult gvresult">
+			<div class="full-width mimg itmcd itmcdV2">
+				<div class="lyr">
+
+					<div class="img l-shad lftd">
+
+						@if(product.extra.saleOff1 >0){
+							<div class="product-label" style="right: 5px;"><span class="sale-product-icon">-@{product.extra.saleOff1}%</span></div>
+						} else {
+
+						}
+						<div class="img full-width">
+							<div class="multiImgHolder wpr">
+								<div class="imgWr loading">
+									<a href="#" class="img imgWr2">
+										<img class="b-lazy"
+										src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+										data-src="@product.info.image.head.small"
+										alt="@product.core.name"
+										/>
+										<noscript>
+											<img class="b-lazy" src="@product.info.image.head.small" alt="@product.core.name">
+										</noscript>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="gvtitle">
+						<h3>
+							<a href="#" class="vip">@product.core.name</a>
+						</h3>
+					</div>
+
+					<div class="prices1">
+						<div class="timeLeftInfo">
+                        </div>
+						<div class="bin">
+							@if(product.extra.saleOff1 > 0) {
+								<span class="amt bold price price_sale old_price">@java.text.NumberFormat.getIntegerInstance.format(product.core.price.head.price)</span>
+
+								<span class="amt bold price price_sale">
+									@java.text.NumberFormat.getIntegerInstance.format((product.core.price.head.price * (100 - product.extra.saleOff1))/100) <b>
+									VND</b>
+								</span>
+							} else {
+								<span class="amt bold price price_sale">@java.text.NumberFormat.getIntegerInstance.format(product.core.price.head.price) <b> VDN </b></span>
+							}
+						</div>
+					</div>
+
+					<div class="meta">
+
+						<div class="hotness-GV bold">
+							<div class="hotness-signal red">
+                  @product.info.sold sold
+							</div>
+						</div>
+
+						@*<div class="lrow">*@
+							@*<span class="ship">*@
+								@*<span>*@
+									@*<span class="bfsp">Free international shipping</span></span>*@
+							@*</span></div>*@
+
+					</div>
+
+				</div>
+			</div>
+		</li>
+	}
+</ul>

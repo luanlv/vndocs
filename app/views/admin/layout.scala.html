@@ -1,0 +1,69 @@
+@(title: String, moreCss: Html = Html(""), moreJs: Html = Html(""))(body: Html)(implicit ctx: Context)
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>@title</title>
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+			<!-- bootstrap 3.0.2 -->
+			@cssTag("admin/bootstrap.min.css")
+				<!-- font Awesome -->
+			@cssTag("admin/font-awesome.min.css")
+				<!-- Ionicons -->
+			@cssTag("admin/ionicons.min.css")
+				<!-- Theme style -->
+			@cssTag("admin/AdminLTE.css")
+
+			@moreCss
+
+				<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+				<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+				<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	</head>
+	<body class="skin-blue">
+			<!-- header logo: style can be found in header.less -->
+		@admin.partial.header()
+
+		<div class="wrapper row-offcanvas row-offcanvas-left">
+				<!-- Left side column. contains the logo and sidebar -->
+		@admin.partial.left_sidebar()
+
+				<!-- Right side column. Contains the navbar and content of the page -->
+			<aside class="right-side">
+					<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1>
+						@title
+						<small>Control panel</small>
+					</h1>
+					<ol class="breadcrumb">
+						<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+						<li class="active">@title</li>
+					</ol>
+				</section>
+
+					<!-- Main content -->
+				<section class="content">
+
+					@body
+
+				</section><!-- /.content -->
+			</aside><!-- /.right-side -->
+		</div><!-- ./wrapper -->
+
+
+		<!-- jQuery 2.0.2 -->
+		@jsTag("jquery/jquery-1.11.3.min.js")
+			<!-- Bootstrap -->
+		@jsTag("admin/bootstrap.min.js")
+			<!-- AdminLTE App -->
+		@jsTag("admin/AdminLTE/app.js")
+
+		@moreJs
+
+	</body>
+</html>
+

@@ -1,0 +1,13 @@
+@(label: String , field: Field, line: Int = 0)(implicit ctx: Context)
+
+<div class="form-group">
+	<label for="@field.id">@label</label>
+	<textarea
+	class="form-control"
+	@if(line > 0){ rows="@line" }
+	name="@field.name"
+	id="@field.id"
+	placeholder="Enter ...">@field.value</textarea>
+	@errMsg(field)
+</div>
+

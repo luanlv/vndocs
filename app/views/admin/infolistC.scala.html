@@ -1,0 +1,57 @@
+@(form: Form[_])(implicit ctx: Context)
+@import admin.field._
+
+@moreCss = {
+
+}
+
+@moreJs = {
+}
+
+@admin.layout("Admin | Create Product", moreCss, moreJs){
+
+		<div class="row">
+			<form action="@routes.Admin.createInfoListPost()" method="POST">
+				<div class="col-md-6">
+					<input name="name" type="hidden" value="brand">
+					@formText("Nhãn hiệu", form("value"))
+					<button type="submit" class="btn btn-primary">Thêm nhãn hiệu</button>
+					<div class="btn btn btn-success">Danh sách</div>
+				</div>
+			</form>
+
+			<form action="@routes.Admin.createInfoListPost()" method="POST">
+				<div class="col-md-6">
+					<input name="name" type="hidden" value="origin">
+					@formText("Xuất xứ", form("value"))
+					<button type="submit" class="btn btn-primary">Thêm xuất xứ</button>
+					<div class="btn btn btn-success">Danh sách</div>
+				</div>
+			</form>
+
+		</div>
+
+	<hr>
+
+		<div class="row">
+			<form action="@routes.Admin.createInfoListPost()" method="POST">
+				<div class="col-md-6">
+					<input name="name" type="hidden" value="legType">
+					@formText("Kiểu chân", form("value"))
+					<button type="submit" class="btn btn-primary">Thêm kiểu chân</button>
+					<div class="btn btn btn-success">Danh sách</div>
+				</div>
+			</form>
+
+			<form action="@routes.Admin.createInfoListPost()" method="POST">
+				<div class="col-md-6">
+					<input name="name" type="hidden" value="legNumber">
+					@formText("Số chân", form("value"))
+					<button type="submit" class="btn btn-primary">Thêm số chân</button>
+					<div class="btn btn btn-success">Danh sách</div>
+				</div>
+			</form>
+		</div>
+
+
+}

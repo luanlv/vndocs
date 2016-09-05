@@ -1,0 +1,49 @@
+@(listMenu: String, allCategory: String, listProduct: String)
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        @cssTag("style.min.css")
+        @cssTag("animate.min.css")
+            <!--[if lt IE 9]>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.4.1/es5-shim.min.js"></script>
+            <![endif]-->
+    </head>
+    <body>
+        <div id="app"></div>
+
+        @jsTag("mithril/mithril.min.js")
+        @jsTag("main.js")
+        @jsTag("app.js")
+        <script>/* <![CDATA[ */
+            var menu = @Html(listMenu);
+            var allCategory = @Html(allCategory);
+            var urls = buildUrls(allCategory);
+            var listProduct1 = [];
+
+//            setTimeout(function(){
+                listProduct1 = @Html(listProduct);
+
+//            }, 0);
+
+            var demoSlide = listProduct1;
+
+//            m.mount(document.querySelector('#header'), window.Nav);
+
+                m.route(document.querySelector('#app'), "/", {
+                "/": window.Main.Home,
+                "/tim-kiem": window.Main.Search,
+                "/c/:category1": window.Main.Category,
+                "/c/:category2/:category1": window.Main.Category,
+                "/c/:category3/:category2/:category1": window.Main.Category,
+                "/p/:c1/:c2/:c3/:item": window.Main.Product
+            });
+
+
+
+        /* ]]> */</script>
+
+
+    </body>
+</html>

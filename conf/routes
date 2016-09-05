@@ -1,0 +1,65 @@
+# Accessibility
+
+
+GET   /                                 controllers.Application.index
+GET   /p/*path                          controllers.Application.product(path: String)
+GET   /c/:slug1                         controllers.Application.category(slug1: String, slug2: String ?="", slug3: String ?="")
+GET   /c/:slug2/:slug1                  controllers.Application.category(slug1: String, slug2: String, slug3: String ?= "")
+GET   /c/:slug3/:slug2/:slug1           controllers.Application.category(slug1: String, slug2: String, slug3: String)
+GET   /tim-kiem                         controllers.Application.search()
+
+GET   /login                           controllers.Auth.login
+POST  /login                           controllers.Auth.authenticate
+GET   /logout                          controllers.Auth.logout
+GET   /signup                          controllers.Auth.signup
+POST  /signup                          controllers.Auth.signupPost
+GET   /signup/check-your-email/:name   controllers.Auth.checkYourEmail(name: String)
+GET   /signup/confirm/:token           controllers.Auth.signupConfirmEmail(token: String)
+GET   /password/reset                  controllers.Auth.passwordReset
+POST  /password/reset/send             controllers.Auth.passwordResetApply
+GET   /password/reset/sent/:email      controllers.Auth.passwordResetSent(email: String)
+GET   /password/reset/confirm/:token   controllers.Auth.passwordResetConfirm(token: String)
+POST  /password/reset/confirm/:token   controllers.Auth.passwordResetConfirmApply(token: String)
+POST  /set-fingerprint/:hash/:ms       controllers.Auth.setFingerprint(hash: String, ms: Int)
+
+#admin
+
+GET     /admin                    controllers.Admin.adminDashboard
+GET     /admin/p/list             controllers.Admin.listProduct(_page: Int ?=1, _num: Int ?=10)
+GET     /admin/p/e/:code          controllers.Admin.editProduct(code: String)
+POST    /admin/p/e                controllers.Admin.editProductPost
+GET     /admin/p/cp               controllers.Admin.createProduct
+POST    /admin/p/cp               controllers.Admin.createProductPost
+GET     /admin/p/cc               controllers.Admin.createCategory
+POST    /admin/p/cc               controllers.Admin.createCategoryPost
+GET     /admin/p/cil              controllers.Admin.createInfoList
+POST    /admin/p/cil              controllers.Admin.createInfoListPost
+GET     /admin/p/cig              controllers.Admin.createGroup
+POST    /admin/p/cig              controllers.Admin.createGroupPost
+GET     /admin/config/listMenu    controllers.Admin.updateMenu
+POST    /admin/config/:id         controllers.Admin.updateMenuPost(id: String, preview: Boolean ?= false)
+
+#API
+
+GET      /api/getGroup/:name         controllers.API.getGroup(name: String)
+
+#image
+GET      /image/list                  @controllers.ImageCtrl.getList(name: String ?="", page: Int ?=1)
+
+GET      /getimage/:size/:uuid        @controllers.ImageCtrl.get(size: String, uuid: String)
+GET      /admin/image/upload          @controllers.ImageCtrl.uploadView
+POST     /admin/image/upload          @controllers.ImageCtrl.upload
+
+#API
+
+#GET      /api/getGroup/:name         controllers.API.getGroup(name: String)
+GET      /api/getProduct/:url                      controllers.API.getProduct(url: String)
+GET      /api/getProductInCategory/:urlSku         controllers.API.getProducts(urlSku: String)
+GET      /api/getProductsForIndex                  controllers.API.getProductsForIndex()
+GET      /api/search                               controllers.API.search()
+# Assets
+GET      /google5106a805f9682e1e.html                controllers.Assets.at(path="/public", file="google5106a805f9682e1e.html")
+GET      /robots.txt                                    controllers.Assets.at(path="/public", file="robots.txt")
+#GET      /sitemap.xml                                controllers.Assets.at(path="/public", file="sitemap.xml")
+GET      /assets/*file                              controllers.Assets.at(path="/public", file)
+#GET      /favicon.ico                               controllers.Assets.at(path="/public", file="favicon.ico")

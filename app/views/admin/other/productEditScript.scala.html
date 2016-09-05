@@ -1,0 +1,5 @@
+@(image: List[lila.product.ImageUrl], price: List[lila.product.ListPrice])(implicit ctx: Context)
+<script>
+	console.log(@image.head.origin);
+	console.log(@price.head.price);
+</script>

@@ -1,0 +1,18 @@
+@(bigPipe: TestBigPipe, listPage: List[Pagelet], page: Pagelet)
+
+@HtmlStream.fromHtml(views.html.index.other.import_t())
+
+@bigPipe.render { pagelet =>
+
+	 @pagelet(page.id)
+
+	-----------------------------------------
+
+	@for(page <- listPage) {
+		@pagelet(page.id)
+	}
+
+	@HtmlStream.fromHtml(views.html.index.other.import_b())
+
+}
+

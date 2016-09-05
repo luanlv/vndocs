@@ -1,0 +1,75 @@
+
+
+var Nav = {};
+Nav.controller = function(){
+    m.redraw.strategy("diff");
+    var ctrl = this;
+    if(window._kw !== undefined ) {
+        ctrl._kw = window._kw;
+    } else {
+        ctrl._kw = ""
+    }
+    //setInterval(function(){m.redraw()}, 2000)
+};
+Nav.view = function(ctrl){
+    //console.log("render view");
+    return (
+        <div id="header">
+        <div className="h-container">
+            <div className="h-left"></div>
+            <div className="h-right">
+                <div className="h-top">
+                    <div className="search clearfix">
+                        <div className="searchWr">
+                            <form action="tim-kiem" method="get">
+                            <input type="text" id="_kw" name="_kw"
+                                   onkeydown={function(){
+                                        if (event.keyCode == 13) {
+                                                event.preventDefault();
+                                                m.route("/tim-kiem?_kw=" + event.target.value);
+                                            }
+                                        }
+                                    }
+                                   config={
+                                      function(el, isInited){
+                                        if(!isInited){
+                                            if(ctrl._kw.length>0){
+                                                el.value = ctrl._kw;
+                                            }
+                                        }
+                                      }
+                                   }
+                            />
+                            <span className="search-icon"></span>
+                            </form>
+                        </div>
+                        <a href="#" className="cartWr clearfix">
+
+                            <span className="cart-icon"></span>
+                            <span className="number-items">
+                                (0) Mục
+                            </span>
+                        </a>
+                        <div className="userWr bo bo-5">
+                        </div>
+                    </div>
+
+                </div>
+                <div className="h-bot">
+                    <ul className="navMenu">
+                        <li><a href="/" config={m.route}>GIỚI THIỆU</a></li>
+                        <li><a href="/" config={m.route} className="active">LINH KIỆN</a></li>
+                        <li><a href="/" config={m.route}>SẢN PHẨM</a></li>
+                        <li><a href="/" config={m.route}>NGHIÊN CỨU</a></li>
+                        <li><a href="/" config={m.route}>DỊCH VỤ</a></li>
+                        <li><a href="/" config={m.route}>LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    )
+};
+
+
+module.exports = Nav;

@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":1,"key":{"_id":1},"name":"_id_","ns":"shopluulinh.infolist"},{"v":1,"unique":true,"key":{"name":1,"value":1},"name":"name_1_value_1","ns":"shopluulinh.infolist"},{"v":1,"key":{"kind":1},"name":"kind_1","ns":"shopluulinh.infolist"}]}

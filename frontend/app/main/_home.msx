@@ -1,0 +1,64 @@
+var Nav = require('./_nav.msx');
+var Footer = require('./_footer.msx');
+var Left = require('./partials/_left.msx');
+var Middle = require('./partials/_middle.msx');
+var Right = require('./partials/_right-tmp.msx');
+var fn = require('../core/fn.msx');
+
+var Home = {
+    controller: function() {
+        m.redraw.strategy("diff");
+
+        var ctrl = this;
+        if(window._kw !== undefined ) {
+            ctrl._kw = window._kw;
+        } else {
+            ctrl._kw = ""
+        }
+        //ctrl.slides = m.prop(window.demoSlide);
+        ctrl.currentSlide = m.prop({});
+        ctrl.products = m.prop([]);
+        ctrl.slides = m.prop([]);
+        ctrl.current = 0;
+
+        //ctrl.currentSlide(window.demoSlide[0]);
+
+        ctrl.loading = true;
+        ctrl.ok = false;
+        ctrl.setup = function(){
+            ctrl.products(ctrl.request.data());
+            ctrl.slides(ctrl.request.data()[0].value.products.slice(2, 6));
+            ctrl.currentSlide(ctrl.slides()[0]);
+            ctrl.maxSlide = ctrl.slides().length;
+        };
+
+        if(window.demoSlide === undefined || window.demoSlide.length == 0) {
+            ctrl.request = fn.requestWithFeedback({method: "GET", url: "/api/getProductsForIndex"}, ctrl.products, ctrl.setup);
+        } else {
+            ctrl.request = {
+                ready: function () {
+                    return true
+                },
+                data: m.prop(window.demoSlide)
+            };
+            ctrl.setup()
+        }
+        window.demoSlide = [];
+    },
+    view: function(ctrl) {
+        return m('div', [
+            Nav.view(ctrl),
+            <div id="main" className="clearfix">
+                {[
+                    Left(ctrl),
+                    Middle(ctrl),
+                    Right(ctrl),
+                ]}
+            </div>,
+            Footer.view(ctrl)
+        ])
+    }
+};
+
+
+module.exports = Home;

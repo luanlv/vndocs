@@ -1,0 +1,92 @@
+var fn = require('../../core/fn.msx');
+
+var Middle =  function(ctrl){
+    return (!ctrl.request.ready()?(<div className="mid">
+            <div class="loader">Loading...</div>
+        </div>):(
+        (ctrl.request.data().products.length < 1)?(
+            <div className="mid">
+                <div className="categoryWr">
+                    <div className="clearfix">
+                        <h3>Không tìm thấy "{m.route.param('_kw')}" trong sản phẩm nào!</h3>
+                    </div>
+                </div>
+            </div>
+        ):(
+        <div className="mid">
+
+            <div className="categoryWr ">
+                <div className="clearfix">
+                    <h3>Tìm kiếm: {m.route.param('_kw')}</h3>
+                    <div className="fr">
+                        Sắp xếp sản phẩm:
+                        <select class="select" id="sortMode">
+                            <option value="by_pass">Mặc định</option>
+                            <option value="n-1">ID sản phẩm giảm dần</option>
+                            <option value="1-n">ID sản phẩm tăng dần</option>
+                            <option value="a-z">Tên sản phẩm từ A-Z</option>
+                            <option value="z-a">Tên sản phẩm từ Z-A</option>
+                            <option value="max-min">Giá sản phẩm giảm dần</option>
+                            <option value="min-max" selected="selected">Giá sản phẩm tăng dần</option>
+                        </select>
+
+                        <select class="select" id="sortLimit">
+                            <option value="20" selected="selected">20</option>
+                            <option value="32">32</option>
+                            <option value="48">48</option>
+                            <option value="56">56</option>
+                        </select>
+
+                    </div>
+
+                    <br/>
+                    <br/>
+                    {fn.buildPageNav(ctrl.currPage, ctrl.maxPage())}
+                    <div className="total fl clearfix">
+                        {ctrl.total()} Sản phẩm
+                    </div>
+                </div>
+                {(ctrl.products().length<1)?(
+                    <div className="loading">
+                        LOADING !!!
+                    </div>
+                ):(
+                    <div className="listProduct inCategory clearfix">
+                        {ctrl.products().map(function(item){
+                            return (
+
+
+                                    <div className="itemWr">
+                                        <a href={(urls[item.sku.slug].replace('/c/', '/p/') + "/" + item.slug)} config={m.route}>
+                                        <div className="img-item">
+                                            <img src={item.info.image[0].small} alt=""/>
+                                        </div>
+
+                                        <div className="info-item">
+                                            <div className="name-item" >
+                                                {item.core.name}
+                                            </div>
+                                            <div className="info-extra-item">
+                                                <span>Bán lẻ:</span>
+                                                <div className="price-item">{fn.price(item.core.price[0].price)} Đ</div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                        <div className="side-info">
+                                            {m.trust(item.extra.note)}
+                                        </div>
+                                    </div>
+                            )
+                        })}
+                    </div>
+                )}
+            </div>
+
+
+        </div>
+        )
+        )
+    )
+};
+
+module.exports = Middle;
